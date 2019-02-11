@@ -1,0 +1,33 @@
+OPERATING-SYSTEM-INFORMATION 
+
+USER INFORMATION :
+deep60 
+
+OPERATING SYSTEM TYPE :
+linux-gnu 
+
+ OPERATING SYSTEM: 
+Distributor ID:	Ubuntu 
+
+OPERATING SYSTEM VERSION:
+Release:	18.04
+
+KERNEL VERSION:
+ 4.15.0-29-generic
+
+GCC BUILD VERSION
+gcc (Ubuntu 7.3.0-27ubuntu1~18.04) 7.3.0
+Copyright (C) 2017 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+KERNEL BUILD TIME:
+#31-Ubuntu SMP Tue Jul 17 15:39:52 UTC 2018
+
+ARCHITECTURE:
+x86_64
+
+FILE SYSTEM INFO:
+               total        used        free      shared  buff/cache   available
+Mem:           5057        1017        3391          13         648        3803
+Swap:          2047           0        2047

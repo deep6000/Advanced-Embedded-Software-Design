@@ -1,0 +1,22 @@
+!/bin/bash
+echo -e  "OPERATING-SYSTEM-INFORMATION \n" > OSinfo.txt
+
+echo    "USER INFORMATION :" >> OSinfo.txt
+echo -e "$USER \n" >> OSinfo.txt
+
+echo    "OPERATING SYSTEM TYPE :" >> OSinfo.txt
+echo -e "$OSTYPE \n" >> OSinfo.txt
+
+echo    " OPERATING SYSTEM: ">> OSinfo.txt
+echo -e "$(lsb_release -i) \n" >> OSinfo.txt
+
+echo    "OPERATING SYSTEM VERSION:" >> OSinfo.txt
+echo -e "$(lsb_release -r)\n" >> OSinfo.txt
+
+echo     "KERNEL VERSION:" >> OSinfo.txt
+echo -e " $(uname -r)\n" >> OSinfo.txt
+
+echo    "GCC BUILD VERSION" >> OSinfo.txt
+echo -e "$(gcc --version)\n" >> OSinfo.txt
+
+echo    "KERNEL BUILD TIME:" >> OSinfo.txt

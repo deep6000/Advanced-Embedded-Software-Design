@@ -1,0 +1,1564 @@
+-----------------------------------------------------------------------------------------
+Thu Jan  1 00:03:08 UTC 1970
+PROCESS ID: 	126
+USER ID:         0
+
+--------------INPUT BUFFER BEFORE SORTING--------------.
+Element Number 0 is {2} 
+Element Number 1 is {10} 
+Element Number 2 is {38} 
+Element Number 3 is {45} 
+Element Number 4 is {33} 
+Element Number 5 is {33} 
+Element Number 6 is {1} 
+Element Number 7 is {43} 
+Element Number 8 is {39} 
+Element Number 9 is {32} 
+Element Number 10 is {23} 
+Element Number 11 is {23} 
+Element Number 12 is {45} 
+Element Number 13 is {23} 
+Element Number 14 is {44} 
+Element Number 15 is {48} 
+Element Number 16 is {33} 
+Element Number 17 is {19} 
+Element Number 18 is {27} 
+Element Number 19 is {31} 
+Element Number 20 is {26} 
+Element Number 21 is {6} 
+Element Number 22 is {7} 
+Element Number 23 is {5} 
+Element Number 24 is {21} 
+Element Number 25 is {28} 
+Element Number 26 is {44} 
+Element Number 27 is {13} 
+Element Number 28 is {26} 
+Element Number 29 is {40} 
+Element Number 30 is {19} 
+Element Number 31 is {30} 
+Element Number 32 is {2} 
+Element Number 33 is {7} 
+Element Number 34 is {27} 
+Element Number 35 is {35} 
+Element Number 36 is {42} 
+Element Number 37 is {28} 
+Element Number 38 is {30} 
+Element Number 39 is {31} 
+Element Number 40 is {10} 
+Element Number 41 is {3} 
+Element Number 42 is {7} 
+Element Number 43 is {5} 
+Element Number 44 is {27} 
+Element Number 45 is {1} 
+Element Number 46 is {5} 
+Element Number 47 is {12} 
+Element Number 48 is {21} 
+Element Number 49 is {32} 
+Element Number 50 is {44} 
+Element Number 51 is {49} 
+Element Number 52 is {38} 
+Element Number 53 is {1} 
+Element Number 54 is {6} 
+Element Number 55 is {11} 
+Element Number 56 is {31} 
+Element Number 57 is {0} 
+Element Number 58 is {24} 
+Element Number 59 is {9} 
+Element Number 60 is {42} 
+Element Number 61 is {45} 
+Element Number 62 is {39} 
+Element Number 63 is {44} 
+Element Number 64 is {4} 
+Element Number 65 is {16} 
+Element Number 66 is {31} 
+Element Number 67 is {47} 
+Element Number 68 is {46} 
+Element Number 69 is {12} 
+Element Number 70 is {30} 
+Element Number 71 is {6} 
+Element Number 72 is {15} 
+Element Number 73 is {37} 
+Element Number 74 is {13} 
+Element Number 75 is {44} 
+Element Number 76 is {39} 
+Element Number 77 is {18} 
+Element Number 78 is {7} 
+Element Number 79 is {10} 
+Element Number 80 is {2} 
+Element Number 81 is {3} 
+Element Number 82 is {11} 
+Element Number 83 is {43} 
+Element Number 84 is {4} 
+Element Number 85 is {17} 
+Element Number 86 is {4} 
+Element Number 87 is {37} 
+Element Number 88 is {20} 
+Element Number 89 is {31} 
+Element Number 90 is {46} 
+Element Number 91 is {12} 
+Element Number 92 is {26} 
+Element Number 93 is {35} 
+Element Number 94 is {7} 
+Element Number 95 is {31} 
+Element Number 96 is {3} 
+Element Number 97 is {38} 
+Element Number 98 is {30} 
+Element Number 99 is {49} 
+Element Number 100 is {2} 
+Element Number 101 is {10} 
+Element Number 102 is {7} 
+Element Number 103 is {18} 
+Element Number 104 is {48} 
+Element Number 105 is {20} 
+Element Number 106 is {14} 
+Element Number 107 is {37} 
+Element Number 108 is {40} 
+Element Number 109 is {21} 
+Element Number 110 is {49} 
+Element Number 111 is {44} 
+Element Number 112 is {24} 
+Element Number 113 is {10} 
+Element Number 114 is {37} 
+Element Number 115 is {30} 
+Element Number 116 is {29} 
+Element Number 117 is {42} 
+Element Number 118 is {17} 
+Element Number 119 is {49} 
+Element Number 120 is {23} 
+Element Number 121 is {13} 
+Element Number 122 is {12} 
+Element Number 123 is {1} 
+Element Number 124 is {0} 
+Element Number 125 is {19} 
+Element Number 126 is {34} 
+Element Number 127 is {3} 
+Element Number 128 is {9} 
+Element Number 129 is {14} 
+Element Number 130 is {4} 
+Element Number 131 is {12} 
+Element Number 132 is {27} 
+Element Number 133 is {11} 
+Element Number 134 is {32} 
+Element Number 135 is {25} 
+Element Number 136 is {33} 
+Element Number 137 is {46} 
+Element Number 138 is {14} 
+Element Number 139 is {25} 
+Element Number 140 is {20} 
+Element Number 141 is {13} 
+Element Number 142 is {20} 
+Element Number 143 is {46} 
+Element Number 144 is {25} 
+Element Number 145 is {7} 
+Element Number 146 is {27} 
+Element Number 147 is {4} 
+Element Number 148 is {1} 
+Element Number 149 is {44} 
+Element Number 150 is {4} 
+Element Number 151 is {26} 
+Element Number 152 is {10} 
+Element Number 153 is {16} 
+Element Number 154 is {28} 
+Element Number 155 is {10} 
+Element Number 156 is {37} 
+Element Number 157 is {14} 
+Element Number 158 is {16} 
+Element Number 159 is {46} 
+Element Number 160 is {31} 
+Element Number 161 is {20} 
+Element Number 162 is {10} 
+Element Number 163 is {8} 
+Element Number 164 is {34} 
+Element Number 165 is {42} 
+Element Number 166 is {33} 
+Element Number 167 is {19} 
+Element Number 168 is {41} 
+Element Number 169 is {47} 
+Element Number 170 is {45} 
+Element Number 171 is {13} 
+Element Number 172 is {12} 
+Element Number 173 is {15} 
+Element Number 174 is {9} 
+Element Number 175 is {37} 
+Element Number 176 is {22} 
+Element Number 177 is {36} 
+Element Number 178 is {41} 
+Element Number 179 is {26} 
+Element Number 180 is {33} 
+Element Number 181 is {47} 
+Element Number 182 is {2} 
+Element Number 183 is {45} 
+Element Number 184 is {13} 
+Element Number 185 is {32} 
+Element Number 186 is {7} 
+Element Number 187 is {0} 
+Element Number 188 is {47} 
+Element Number 189 is {25} 
+Element Number 190 is {49} 
+Element Number 191 is {28} 
+Element Number 192 is {48} 
+Element Number 193 is {11} 
+Element Number 194 is {36} 
+Element Number 195 is {32} 
+Element Number 196 is {4} 
+Element Number 197 is {21} 
+Element Number 198 is {1} 
+Element Number 199 is {47} 
+Element Number 200 is {20} 
+Element Number 201 is {46} 
+Element Number 202 is {10} 
+Element Number 203 is {32} 
+Element Number 204 is {13} 
+Element Number 205 is {21} 
+Element Number 206 is {21} 
+Element Number 207 is {36} 
+Element Number 208 is {8} 
+Element Number 209 is {14} 
+Element Number 210 is {14} 
+Element Number 211 is {43} 
+Element Number 212 is {12} 
+Element Number 213 is {16} 
+Element Number 214 is {40} 
+Element Number 215 is {27} 
+Element Number 216 is {49} 
+Element Number 217 is {47} 
+Element Number 218 is {30} 
+Element Number 219 is {48} 
+Element Number 220 is {23} 
+Element Number 221 is {29} 
+Element Number 222 is {28} 
+Element Number 223 is {21} 
+Element Number 224 is {40} 
+Element Number 225 is {16} 
+Element Number 226 is {5} 
+Element Number 227 is {46} 
+Element Number 228 is {37} 
+Element Number 229 is {8} 
+Element Number 230 is {45} 
+Element Number 231 is {9} 
+Element Number 232 is {7} 
+Element Number 233 is {7} 
+Element Number 234 is {43} 
+Element Number 235 is {20} 
+Element Number 236 is {29} 
+Element Number 237 is {14} 
+Element Number 238 is {8} 
+Element Number 239 is {39} 
+Element Number 240 is {30} 
+Element Number 241 is {22} 
+Element Number 242 is {34} 
+Element Number 243 is {44} 
+Element Number 244 is {41} 
+Element Number 245 is {24} 
+Element Number 246 is {22} 
+Element Number 247 is {42} 
+Element Number 248 is {21} 
+Element Number 249 is {2} 
+Element Number 250 is {40} 
+Element Number 251 is {46} 
+Element Number 252 is {33} 
+Element Number 253 is {20} 
+Element Number 254 is {19} 
+Element Number 255 is {23} 
+
+--------------OUTPUT BUFFER AFTER SORTING--------------.
+Sorted list Element no 0 is {49} 
+Sorted list Element no 1 is {49} 
+Sorted list Element no 2 is {49} 
+Sorted list Element no 3 is {49} 
+Sorted list Element no 4 is {49} 
+Sorted list Element no 5 is {49} 
+Sorted list Element no 6 is {48} 
+Sorted list Element no 7 is {48} 
+Sorted list Element no 8 is {48} 
+Sorted list Element no 9 is {48} 
+Sorted list Element no 10 is {47} 
+Sorted list Element no 11 is {47} 
+Sorted list Element no 12 is {47} 
+Sorted list Element no 13 is {47} 
+Sorted list Element no 14 is {47} 
+Sorted list Element no 15 is {47} 
+Sorted list Element no 16 is {46} 
+Sorted list Element no 17 is {46} 
+Sorted list Element no 18 is {46} 
+Sorted list Element no 19 is {46} 
+Sorted list Element no 20 is {46} 
+Sorted list Element no 21 is {46} 
+Sorted list Element no 22 is {46} 
+Sorted list Element no 23 is {46} 
+Sorted list Element no 24 is {45} 
+Sorted list Element no 25 is {45} 
+Sorted list Element no 26 is {45} 
+Sorted list Element no 27 is {45} 
+Sorted list Element no 28 is {45} 
+Sorted list Element no 29 is {45} 
+Sorted list Element no 30 is {44} 
+Sorted list Element no 31 is {44} 
+Sorted list Element no 32 is {44} 
+Sorted list Element no 33 is {44} 
+Sorted list Element no 34 is {44} 
+Sorted list Element no 35 is {44} 
+Sorted list Element no 36 is {44} 
+Sorted list Element no 37 is {44} 
+Sorted list Element no 38 is {43} 
+Sorted list Element no 39 is {43} 
+Sorted list Element no 40 is {43} 
+Sorted list Element no 41 is {43} 
+Sorted list Element no 42 is {42} 
+Sorted list Element no 43 is {42} 
+Sorted list Element no 44 is {42} 
+Sorted list Element no 45 is {42} 
+Sorted list Element no 46 is {42} 
+Sorted list Element no 47 is {41} 
+Sorted list Element no 48 is {41} 
+Sorted list Element no 49 is {41} 
+Sorted list Element no 50 is {40} 
+Sorted list Element no 51 is {40} 
+Sorted list Element no 52 is {40} 
+Sorted list Element no 53 is {40} 
+Sorted list Element no 54 is {40} 
+Sorted list Element no 55 is {39} 
+Sorted list Element no 56 is {39} 
+Sorted list Element no 57 is {39} 
+Sorted list Element no 58 is {39} 
+Sorted list Element no 59 is {38} 
+Sorted list Element no 60 is {38} 
+Sorted list Element no 61 is {38} 
+Sorted list Element no 62 is {37} 
+Sorted list Element no 63 is {37} 
+Sorted list Element no 64 is {37} 
+Sorted list Element no 65 is {37} 
+Sorted list Element no 66 is {37} 
+Sorted list Element no 67 is {37} 
+Sorted list Element no 68 is {37} 
+Sorted list Element no 69 is {36} 
+Sorted list Element no 70 is {36} 
+Sorted list Element no 71 is {36} 
+Sorted list Element no 72 is {35} 
+Sorted list Element no 73 is {35} 
+Sorted list Element no 74 is {34} 
+Sorted list Element no 75 is {34} 
+Sorted list Element no 76 is {34} 
+Sorted list Element no 77 is {33} 
+Sorted list Element no 78 is {33} 
+Sorted list Element no 79 is {33} 
+Sorted list Element no 80 is {33} 
+Sorted list Element no 81 is {33} 
+Sorted list Element no 82 is {33} 
+Sorted list Element no 83 is {33} 
+Sorted list Element no 84 is {32} 
+Sorted list Element no 85 is {32} 
+Sorted list Element no 86 is {32} 
+Sorted list Element no 87 is {32} 
+Sorted list Element no 88 is {32} 
+Sorted list Element no 89 is {32} 
+Sorted list Element no 90 is {31} 
+Sorted list Element no 91 is {31} 
+Sorted list Element no 92 is {31} 
+Sorted list Element no 93 is {31} 
+Sorted list Element no 94 is {31} 
+Sorted list Element no 95 is {31} 
+Sorted list Element no 96 is {31} 
+Sorted list Element no 97 is {30} 
+Sorted list Element no 98 is {30} 
+Sorted list Element no 99 is {30} 
+Sorted list Element no 100 is {30} 
+Sorted list Element no 101 is {30} 
+Sorted list Element no 102 is {30} 
+Sorted list Element no 103 is {30} 
+Sorted list Element no 104 is {29} 
+Sorted list Element no 105 is {29} 
+Sorted list Element no 106 is {29} 
+Sorted list Element no 107 is {28} 
+Sorted list Element no 108 is {28} 
+Sorted list Element no 109 is {28} 
+Sorted list Element no 110 is {28} 
+Sorted list Element no 111 is {28} 
+Sorted list Element no 112 is {27} 
+Sorted list Element no 113 is {27} 
+Sorted list Element no 114 is {27} 
+Sorted list Element no 115 is {27} 
+Sorted list Element no 116 is {27} 
+Sorted list Element no 117 is {27} 
+Sorted list Element no 118 is {26} 
+Sorted list Element no 119 is {26} 
+Sorted list Element no 120 is {26} 
+Sorted list Element no 121 is {26} 
+Sorted list Element no 122 is {26} 
+Sorted list Element no 123 is {25} 
+Sorted list Element no 124 is {25} 
+Sorted list Element no 125 is {25} 
+Sorted list Element no 126 is {25} 
+Sorted list Element no 127 is {24} 
+Sorted list Element no 128 is {24} 
+Sorted list Element no 129 is {24} 
+Sorted list Element no 130 is {23} 
+Sorted list Element no 131 is {23} 
+Sorted list Element no 132 is {23} 
+Sorted list Element no 133 is {23} 
+Sorted list Element no 134 is {23} 
+Sorted list Element no 135 is {23} 
+Sorted list Element no 136 is {22} 
+Sorted list Element no 137 is {22} 
+Sorted list Element no 138 is {22} 
+Sorted list Element no 139 is {21} 
+Sorted list Element no 140 is {21} 
+Sorted list Element no 141 is {21} 
+Sorted list Element no 142 is {21} 
+Sorted list Element no 143 is {21} 
+Sorted list Element no 144 is {21} 
+Sorted list Element no 145 is {21} 
+Sorted list Element no 146 is {21} 
+Sorted list Element no 147 is {20} 
+Sorted list Element no 148 is {20} 
+Sorted list Element no 149 is {20} 
+Sorted list Element no 150 is {20} 
+Sorted list Element no 151 is {20} 
+Sorted list Element no 152 is {20} 
+Sorted list Element no 153 is {20} 
+Sorted list Element no 154 is {20} 
+Sorted list Element no 155 is {19} 
+Sorted list Element no 156 is {19} 
+Sorted list Element no 157 is {19} 
+Sorted list Element no 158 is {19} 
+Sorted list Element no 159 is {19} 
+Sorted list Element no 160 is {18} 
+Sorted list Element no 161 is {18} 
+Sorted list Element no 162 is {17} 
+Sorted list Element no 163 is {17} 
+Sorted list Element no 164 is {16} 
+Sorted list Element no 165 is {16} 
+Sorted list Element no 166 is {16} 
+Sorted list Element no 167 is {16} 
+Sorted list Element no 168 is {16} 
+Sorted list Element no 169 is {15} 
+Sorted list Element no 170 is {15} 
+Sorted list Element no 171 is {14} 
+Sorted list Element no 172 is {14} 
+Sorted list Element no 173 is {14} 
+Sorted list Element no 174 is {14} 
+Sorted list Element no 175 is {14} 
+Sorted list Element no 176 is {14} 
+Sorted list Element no 177 is {14} 
+Sorted list Element no 178 is {13} 
+Sorted list Element no 179 is {13} 
+Sorted list Element no 180 is {13} 
+Sorted list Element no 181 is {13} 
+Sorted list Element no 182 is {13} 
+Sorted list Element no 183 is {13} 
+Sorted list Element no 184 is {13} 
+Sorted list Element no 185 is {12} 
+Sorted list Element no 186 is {12} 
+Sorted list Element no 187 is {12} 
+Sorted list Element no 188 is {12} 
+Sorted list Element no 189 is {12} 
+Sorted list Element no 190 is {12} 
+Sorted list Element no 191 is {12} 
+Sorted list Element no 192 is {11} 
+Sorted list Element no 193 is {11} 
+Sorted list Element no 194 is {11} 
+Sorted list Element no 195 is {11} 
+Sorted list Element no 196 is {10} 
+Sorted list Element no 197 is {10} 
+Sorted list Element no 198 is {10} 
+Sorted list Element no 199 is {10} 
+Sorted list Element no 200 is {10} 
+Sorted list Element no 201 is {10} 
+Sorted list Element no 202 is {10} 
+Sorted list Element no 203 is {10} 
+Sorted list Element no 204 is {10} 
+Sorted list Element no 205 is {9} 
+Sorted list Element no 206 is {9} 
+Sorted list Element no 207 is {9} 
+Sorted list Element no 208 is {9} 
+Sorted list Element no 209 is {8} 
+Sorted list Element no 210 is {8} 
+Sorted list Element no 211 is {8} 
+Sorted list Element no 212 is {8} 
+Sorted list Element no 213 is {7} 
+Sorted list Element no 214 is {7} 
+Sorted list Element no 215 is {7} 
+Sorted list Element no 216 is {7} 
+Sorted list Element no 217 is {7} 
+Sorted list Element no 218 is {7} 
+Sorted list Element no 219 is {7} 
+Sorted list Element no 220 is {7} 
+Sorted list Element no 221 is {7} 
+Sorted list Element no 222 is {7} 
+Sorted list Element no 223 is {6} 
+Sorted list Element no 224 is {6} 
+Sorted list Element no 225 is {6} 
+Sorted list Element no 226 is {5} 
+Sorted list Element no 227 is {5} 
+Sorted list Element no 228 is {5} 
+Sorted list Element no 229 is {5} 
+Sorted list Element no 230 is {4} 
+Sorted list Element no 231 is {4} 
+Sorted list Element no 232 is {4} 
+Sorted list Element no 233 is {4} 
+Sorted list Element no 234 is {4} 
+Sorted list Element no 235 is {4} 
+Sorted list Element no 236 is {4} 
+Sorted list Element no 237 is {3} 
+Sorted list Element no 238 is {3} 
+Sorted list Element no 239 is {3} 
+Sorted list Element no 240 is {3} 
+Sorted list Element no 241 is {2} 
+Sorted list Element no 242 is {2} 
+Sorted list Element no 243 is {2} 
+Sorted list Element no 244 is {2} 
+Sorted list Element no 245 is {2} 
+Sorted list Element no 246 is {2} 
+Sorted list Element no 247 is {1} 
+Sorted list Element no 248 is {1} 
+Sorted list Element no 249 is {1} 
+Sorted list Element no 250 is {1} 
+Sorted list Element no 251 is {1} 
+Sorted list Element no 252 is {1} 
+Sorted list Element no 253 is {0} 
+Sorted list Element no 254 is {0} 
+Sorted list Element no 255 is {0} 
+Total time taken for system call -> 0.020000
+System call executed properly 
+------------------------------------------------------------------------------------------4
+Thu Jan  1 00:013:49 UTC 1970
+PROCESS ID: 	138
+USER ID:         0
+--------------INPUT BUFFER BEFORE SORTING--------------.
+Element Number 0 is {2} 
+Element Number 1 is {10} 
+Element Number 2 is {38} 
+Element Number 3 is {45} 
+Element Number 4 is {33} 
+Element Number 5 is {33} 
+Element Number 6 is {1} 
+Element Number 7 is {43} 
+Element Number 8 is {39} 
+Element Number 9 is {32} 
+Element Number 10 is {23} 
+Element Number 11 is {23} 
+Element Number 12 is {45} 
+Element Number 13 is {23} 
+Element Number 14 is {44} 
+Element Number 15 is {48} 
+Element Number 16 is {33} 
+Element Number 17 is {19} 
+Element Number 18 is {27} 
+Element Number 19 is {31} 
+Element Number 20 is {26} 
+Element Number 21 is {6} 
+Element Number 22 is {7} 
+Element Number 23 is {5} 
+Element Number 24 is {21} 
+Element Number 25 is {28} 
+Element Number 26 is {44} 
+Element Number 27 is {13} 
+Element Number 28 is {26} 
+Element Number 29 is {40} 
+Element Number 30 is {19} 
+Element Number 31 is {30} 
+Element Number 32 is {2} 
+Element Number 33 is {7} 
+Element Number 34 is {27} 
+Element Number 35 is {35} 
+Element Number 36 is {42} 
+Element Number 37 is {28} 
+Element Number 38 is {30} 
+Element Number 39 is {31} 
+Element Number 40 is {10} 
+Element Number 41 is {3} 
+Element Number 42 is {7} 
+Element Number 43 is {5} 
+Element Number 44 is {27} 
+Element Number 45 is {1} 
+Element Number 46 is {5} 
+Element Number 47 is {12} 
+Element Number 48 is {21} 
+Element Number 49 is {32} 
+Element Number 50 is {44} 
+Element Number 51 is {49} 
+Element Number 52 is {38} 
+Element Number 53 is {1} 
+Element Number 54 is {6} 
+Element Number 55 is {11} 
+Element Number 56 is {31} 
+Element Number 57 is {0} 
+Element Number 58 is {24} 
+Element Number 59 is {9} 
+Element Number 60 is {42} 
+Element Number 61 is {45} 
+Element Number 62 is {39} 
+Element Number 63 is {44} 
+Element Number 64 is {4} 
+Element Number 65 is {16} 
+Element Number 66 is {31} 
+Element Number 67 is {47} 
+Element Number 68 is {46} 
+Element Number 69 is {12} 
+Element Number 70 is {30} 
+Element Number 71 is {6} 
+Element Number 72 is {15} 
+Element Number 73 is {37} 
+Element Number 74 is {13} 
+Element Number 75 is {44} 
+Element Number 76 is {39} 
+Element Number 77 is {18} 
+Element Number 78 is {7} 
+Element Number 79 is {10} 
+Element Number 80 is {2} 
+Element Number 81 is {3} 
+Element Number 82 is {11} 
+Element Number 83 is {43} 
+Element Number 84 is {4} 
+Element Number 85 is {17} 
+Element Number 86 is {4} 
+Element Number 87 is {37} 
+Element Number 88 is {20} 
+Element Number 89 is {31} 
+Element Number 90 is {46} 
+Element Number 91 is {12} 
+Element Number 92 is {26} 
+Element Number 93 is {35} 
+Element Number 94 is {7} 
+Element Number 95 is {31} 
+Element Number 96 is {3} 
+Element Number 97 is {38} 
+Element Number 98 is {30} 
+Element Number 99 is {49} 
+Element Number 100 is {2} 
+Element Number 101 is {10} 
+Element Number 102 is {7} 
+Element Number 103 is {18} 
+Element Number 104 is {48} 
+Element Number 105 is {20} 
+Element Number 106 is {14} 
+Element Number 107 is {37} 
+Element Number 108 is {40} 
+Element Number 109 is {21} 
+Element Number 110 is {49} 
+Element Number 111 is {44} 
+Element Number 112 is {24} 
+Element Number 113 is {10} 
+Element Number 114 is {37} 
+Element Number 115 is {30} 
+Element Number 116 is {29} 
+Element Number 117 is {42} 
+Element Number 118 is {17} 
+Element Number 119 is {49} 
+Element Number 120 is {23} 
+Element Number 121 is {13} 
+Element Number 122 is {12} 
+Element Number 123 is {1} 
+Element Number 124 is {0} 
+Element Number 125 is {19} 
+Element Number 126 is {34} 
+Element Number 127 is {3} 
+Element Number 128 is {9} 
+Element Number 129 is {14} 
+Element Number 130 is {4} 
+Element Number 131 is {12} 
+Element Number 132 is {27} 
+Element Number 133 is {11} 
+Element Number 134 is {32} 
+Element Number 135 is {25} 
+Element Number 136 is {33} 
+Element Number 137 is {46} 
+Element Number 138 is {14} 
+Element Number 139 is {25} 
+Element Number 140 is {20} 
+Element Number 141 is {13} 
+Element Number 142 is {20} 
+Element Number 143 is {46} 
+Element Number 144 is {25} 
+Element Number 145 is {7} 
+Element Number 146 is {27} 
+Element Number 147 is {4} 
+Element Number 148 is {1} 
+Element Number 149 is {44} 
+Element Number 150 is {4} 
+Element Number 151 is {26} 
+Element Number 152 is {10} 
+Element Number 153 is {16} 
+Element Number 154 is {28} 
+Element Number 155 is {10} 
+Element Number 156 is {37} 
+Element Number 157 is {14} 
+Element Number 158 is {16} 
+Element Number 159 is {46} 
+Element Number 160 is {31} 
+Element Number 161 is {20} 
+Element Number 162 is {10} 
+Element Number 163 is {8} 
+Element Number 164 is {34} 
+Element Number 165 is {42} 
+Element Number 166 is {33} 
+Element Number 167 is {19} 
+Element Number 168 is {41} 
+Element Number 169 is {47} 
+Element Number 170 is {45} 
+Element Number 171 is {13} 
+Element Number 172 is {12} 
+Element Number 173 is {15} 
+Element Number 174 is {9} 
+Element Number 175 is {37} 
+Element Number 176 is {22} 
+Element Number 177 is {36} 
+Element Number 178 is {41} 
+Element Number 179 is {26} 
+Element Number 180 is {33} 
+Element Number 181 is {47} 
+Element Number 182 is {2} 
+Element Number 183 is {45} 
+Element Number 184 is {13} 
+Element Number 185 is {32} 
+Element Number 186 is {7} 
+Element Number 187 is {0} 
+Element Number 188 is {47} 
+Element Number 189 is {25} 
+Element Number 190 is {49} 
+Element Number 191 is {28} 
+Element Number 192 is {48} 
+Element Number 193 is {11} 
+Element Number 194 is {36} 
+Element Number 195 is {32} 
+Element Number 196 is {4} 
+Element Number 197 is {21} 
+Element Number 198 is {1} 
+Element Number 199 is {47} 
+Element Number 200 is {20} 
+Element Number 201 is {46} 
+Element Number 202 is {10} 
+Element Number 203 is {32} 
+Element Number 204 is {13} 
+Element Number 205 is {21} 
+Element Number 206 is {21} 
+Element Number 207 is {36} 
+Element Number 208 is {8} 
+Element Number 209 is {14} 
+Element Number 210 is {14} 
+Element Number 211 is {43} 
+Element Number 212 is {12} 
+Element Number 213 is {16} 
+Element Number 214 is {40} 
+Element Number 215 is {27} 
+Element Number 216 is {49} 
+Element Number 217 is {47} 
+Element Number 218 is {30} 
+Element Number 219 is {48} 
+Element Number 220 is {23} 
+Element Number 221 is {29} 
+Element Number 222 is {28} 
+Element Number 223 is {21} 
+Element Number 224 is {40} 
+Element Number 225 is {16} 
+Element Number 226 is {5} 
+Element Number 227 is {46} 
+Element Number 228 is {37} 
+Element Number 229 is {8} 
+Element Number 230 is {45} 
+Element Number 231 is {9} 
+Element Number 232 is {7} 
+Element Number 233 is {7} 
+Element Number 234 is {43} 
+Element Number 235 is {20} 
+Element Number 236 is {29} 
+Element Number 237 is {14} 
+Element Number 238 is {8} 
+Element Number 239 is {39} 
+Element Number 240 is {30} 
+Element Number 241 is {22} 
+Element Number 242 is {34} 
+Element Number 243 is {44} 
+Element Number 244 is {41} 
+Element Number 245 is {24} 
+Element Number 246 is {22} 
+Element Number 247 is {42} 
+Element Number 248 is {21} 
+Element Number 249 is {2} 
+Element Number 250 is {40} 
+Element Number 251 is {46} 
+Element Number 252 is {33} 
+Element Number 253 is {20} 
+Element Number 254 is {19} 
+Element Number 255 is {23} 
+
+--------------OUTPUT BUFFER AFTER SORTING--------------.
+Sorted list Element no 0 is {49} 
+Sorted list Element no 1 is {49} 
+Sorted list Element no 2 is {49} 
+Sorted list Element no 3 is {49} 
+Sorted list Element no 4 is {49} 
+Sorted list Element no 5 is {49} 
+Sorted list Element no 6 is {48} 
+Sorted list Element no 7 is {48} 
+Sorted list Element no 8 is {48} 
+Sorted list Element no 9 is {48} 
+Sorted list Element no 10 is {47} 
+Sorted list Element no 11 is {47} 
+Sorted list Element no 12 is {47} 
+Sorted list Element no 13 is {47} 
+Sorted list Element no 14 is {47} 
+Sorted list Element no 15 is {47} 
+Sorted list Element no 16 is {46} 
+Sorted list Element no 17 is {46} 
+Sorted list Element no 18 is {46} 
+Sorted list Element no 19 is {46} 
+Sorted list Element no 20 is {46} 
+Sorted list Element no 21 is {46} 
+Sorted list Element no 22 is {46} 
+Sorted list Element no 23 is {46} 
+Sorted list Element no 24 is {45} 
+Sorted list Element no 25 is {45} 
+Sorted list Element no 26 is {45} 
+Sorted list Element no 27 is {45} 
+Sorted list Element no 28 is {45} 
+Sorted list Element no 29 is {45} 
+Sorted list Element no 30 is {44} 
+Sorted list Element no 31 is {44} 
+Sorted list Element no 32 is {44} 
+Sorted list Element no 33 is {44} 
+Sorted list Element no 34 is {44} 
+Sorted list Element no 35 is {44} 
+Sorted list Element no 36 is {44} 
+Sorted list Element no 37 is {44} 
+Sorted list Element no 38 is {43} 
+Sorted list Element no 39 is {43} 
+Sorted list Element no 40 is {43} 
+Sorted list Element no 41 is {43} 
+Sorted list Element no 42 is {42} 
+Sorted list Element no 43 is {42} 
+Sorted list Element no 44 is {42} 
+Sorted list Element no 45 is {42} 
+Sorted list Element no 46 is {42} 
+Sorted list Element no 47 is {41} 
+Sorted list Element no 48 is {41} 
+Sorted list Element no 49 is {41} 
+Sorted list Element no 50 is {40} 
+Sorted list Element no 51 is {40} 
+Sorted list Element no 52 is {40} 
+Sorted list Element no 53 is {40} 
+Sorted list Element no 54 is {40} 
+Sorted list Element no 55 is {39} 
+Sorted list Element no 56 is {39} 
+Sorted list Element no 57 is {39} 
+Sorted list Element no 58 is {39} 
+Sorted list Element no 59 is {38} 
+Sorted list Element no 60 is {38} 
+Sorted list Element no 61 is {38} 
+Sorted list Element no 62 is {37} 
+Sorted list Element no 63 is {37} 
+Sorted list Element no 64 is {37} 
+Sorted list Element no 65 is {37} 
+Sorted list Element no 66 is {37} 
+Sorted list Element no 67 is {37} 
+Sorted list Element no 68 is {37} 
+Sorted list Element no 69 is {36} 
+Sorted list Element no 70 is {36} 
+Sorted list Element no 71 is {36} 
+Sorted list Element no 72 is {35} 
+Sorted list Element no 73 is {35} 
+Sorted list Element no 74 is {34} 
+Sorted list Element no 75 is {34} 
+Sorted list Element no 76 is {34} 
+Sorted list Element no 77 is {33} 
+Sorted list Element no 78 is {33} 
+Sorted list Element no 79 is {33} 
+Sorted list Element no 80 is {33} 
+Sorted list Element no 81 is {33} 
+Sorted list Element no 82 is {33} 
+Sorted list Element no 83 is {33} 
+Sorted list Element no 84 is {32} 
+Sorted list Element no 85 is {32} 
+Sorted list Element no 86 is {32} 
+Sorted list Element no 87 is {32} 
+Sorted list Element no 88 is {32} 
+Sorted list Element no 89 is {32} 
+Sorted list Element no 90 is {31} 
+Sorted list Element no 91 is {31} 
+Sorted list Element no 92 is {31} 
+Sorted list Element no 93 is {31} 
+Sorted list Element no 94 is {31} 
+Sorted list Element no 95 is {31} 
+Sorted list Element no 96 is {31} 
+Sorted list Element no 97 is {30} 
+Sorted list Element no 98 is {30} 
+Sorted list Element no 99 is {30} 
+Sorted list Element no 100 is {30} 
+Sorted list Element no 101 is {30} 
+Sorted list Element no 102 is {30} 
+Sorted list Element no 103 is {30} 
+Sorted list Element no 104 is {29} 
+Sorted list Element no 105 is {29} 
+Sorted list Element no 106 is {29} 
+Sorted list Element no 107 is {28} 
+Sorted list Element no 108 is {28} 
+Sorted list Element no 109 is {28} 
+Sorted list Element no 110 is {28} 
+Sorted list Element no 111 is {28} 
+Sorted list Element no 112 is {27} 
+Sorted list Element no 113 is {27} 
+Sorted list Element no 114 is {27} 
+Sorted list Element no 115 is {27} 
+Sorted list Element no 116 is {27} 
+Sorted list Element no 117 is {27} 
+Sorted list Element no 118 is {26} 
+Sorted list Element no 119 is {26} 
+Sorted list Element no 120 is {26} 
+Sorted list Element no 121 is {26} 
+Sorted list Element no 122 is {26} 
+Sorted list Element no 123 is {25} 
+Sorted list Element no 124 is {25} 
+Sorted list Element no 125 is {25} 
+Sorted list Element no 126 is {25} 
+Sorted list Element no 127 is {24} 
+Sorted list Element no 128 is {24} 
+Sorted list Element no 129 is {24} 
+Sorted list Element no 130 is {23} 
+Sorted list Element no 131 is {23} 
+Sorted list Element no 132 is {23} 
+Sorted list Element no 133 is {23} 
+Sorted list Element no 134 is {23} 
+Sorted list Element no 135 is {23} 
+Sorted list Element no 136 is {22} 
+Sorted list Element no 137 is {22} 
+Sorted list Element no 138 is {22} 
+Sorted list Element no 139 is {21} 
+Sorted list Element no 140 is {21} 
+Sorted list Element no 141 is {21} 
+Sorted list Element no 142 is {21} 
+Sorted list Element no 143 is {21} 
+Sorted list Element no 144 is {21} 
+Sorted list Element no 145 is {21} 
+Sorted list Element no 146 is {21} 
+Sorted list Element no 147 is {20} 
+Sorted list Element no 148 is {20} 
+Sorted list Element no 149 is {20} 
+Sorted list Element no 150 is {20} 
+Sorted list Element no 151 is {20} 
+Sorted list Element no 152 is {20} 
+Sorted list Element no 153 is {20} 
+Sorted list Element no 154 is {20} 
+Sorted list Element no 155 is {19} 
+Sorted list Element no 156 is {19} 
+Sorted list Element no 157 is {19} 
+Sorted list Element no 158 is {19} 
+Sorted list Element no 159 is {19} 
+Sorted list Element no 160 is {18} 
+Sorted list Element no 161 is {18} 
+Sorted list Element no 162 is {17} 
+Sorted list Element no 163 is {17} 
+Sorted list Element no 164 is {16} 
+Sorted list Element no 165 is {16} 
+Sorted list Element no 166 is {16} 
+Sorted list Element no 167 is {16} 
+Sorted list Element no 168 is {16} 
+Sorted list Element no 169 is {15} 
+Sorted list Element no 170 is {15} 
+Sorted list Element no 171 is {14} 
+Sorted list Element no 172 is {14} 
+Sorted list Element no 173 is {14} 
+Sorted list Element no 174 is {14} 
+Sorted list Element no 175 is {14} 
+Sorted list Element no 176 is {14} 
+Sorted list Element no 177 is {14} 
+Sorted list Element no 178 is {13} 
+Sorted list Element no 179 is {13} 
+Sorted list Element no 180 is {13} 
+Sorted list Element no 181 is {13} 
+Sorted list Element no 182 is {13} 
+Sorted list Element no 183 is {13} 
+Sorted list Element no 184 is {13} 
+Sorted list Element no 185 is {12} 
+Sorted list Element no 186 is {12} 
+Sorted list Element no 187 is {12} 
+Sorted list Element no 188 is {12} 
+Sorted list Element no 189 is {12} 
+Sorted list Element no 190 is {12} 
+Sorted list Element no 191 is {12} 
+Sorted list Element no 192 is {11} 
+Sorted list Element no 193 is {11} 
+Sorted list Element no 194 is {11} 
+Sorted list Element no 195 is {11} 
+Sorted list Element no 196 is {10} 
+Sorted list Element no 197 is {10} 
+Sorted list Element no 198 is {10} 
+Sorted list Element no 199 is {10} 
+Sorted list Element no 200 is {10} 
+Sorted list Element no 201 is {10} 
+Sorted list Element no 202 is {10} 
+Sorted list Element no 203 is {10} 
+Sorted list Element no 204 is {10} 
+Sorted list Element no 205 is {9} 
+Sorted list Element no 206 is {9} 
+Sorted list Element no 207 is {9} 
+Sorted list Element no 208 is {9} 
+Sorted list Element no 209 is {8} 
+Sorted list Element no 210 is {8} 
+Sorted list Element no 211 is {8} 
+Sorted list Element no 212 is {8} 
+Sorted list Element no 213 is {7} 
+Sorted list Element no 214 is {7} 
+Sorted list Element no 215 is {7} 
+Sorted list Element no 216 is {7} 
+Sorted list Element no 217 is {7} 
+Sorted list Element no 218 is {7} 
+Sorted list Element no 219 is {7} 
+Sorted list Element no 220 is {7} 
+Sorted list Element no 221 is {7} 
+Sorted list Element no 222 is {7} 
+Sorted list Element no 223 is {6} 
+Sorted list Element no 224 is {6} 
+Sorted list Element no 225 is {6} 
+Sorted list Element no 226 is {5} 
+Sorted list Element no 227 is {5} 
+Sorted list Element no 228 is {5} 
+Sorted list Element no 229 is {5} 
+Sorted list Element no 230 is {4} 
+Sorted list Element no 231 is {4} 
+Sorted list Element no 232 is {4} 
+Sorted list Element no 233 is {4} 
+Sorted list Element no 234 is {4} 
+Sorted list Element no 235 is {4} 
+Sorted list Element no 236 is {4} 
+Sorted list Element no 237 is {3} 
+Sorted list Element no 238 is {3} 
+Sorted list Element no 239 is {3} 
+Sorted list Element no 240 is {3} 
+Sorted list Element no 241 is {2} 
+Sorted list Element no 242 is {2} 
+Sorted list Element no 243 is {2} 
+Sorted list Element no 244 is {2} 
+Sorted list Element no 245 is {2} 
+Sorted list Element no 246 is {2} 
+Sorted list Element no 247 is {1} 
+Sorted list Element no 248 is {1} 
+Sorted list Element no 249 is {1} 
+Sorted list Element no 250 is {1} 
+Sorted list Element no 251 is {1} 
+Sorted list Element no 252 is {1} 
+Sorted list Element no 253 is {0} 
+Sorted list Element no 254 is {0} 
+Sorted list Element no 255 is {0} 
+Total time taken for system call -> 0.040000
+System call executed properly/n
+------------------------------------------------------------------------------------------6
+Thu Jan  1 00:23:39 UTC 1970
+PROCESS ID: 	149
+USER ID:         0
+--------------INPUT BUFFER BEFORE SORTING--------------.
+Element Number 0 is {2} 
+Element Number 1 is {10} 
+Element Number 2 is {38} 
+Element Number 3 is {45} 
+Element Number 4 is {33} 
+Element Number 5 is {33} 
+Element Number 6 is {1} 
+Element Number 7 is {43} 
+Element Number 8 is {39} 
+Element Number 9 is {32} 
+Element Number 10 is {23} 
+Element Number 11 is {23} 
+Element Number 12 is {45} 
+Element Number 13 is {23} 
+Element Number 14 is {44} 
+Element Number 15 is {48} 
+Element Number 16 is {33} 
+Element Number 17 is {19} 
+Element Number 18 is {27} 
+Element Number 19 is {31} 
+Element Number 20 is {26} 
+Element Number 21 is {6} 
+Element Number 22 is {7} 
+Element Number 23 is {5} 
+Element Number 24 is {21} 
+Element Number 25 is {28} 
+Element Number 26 is {44} 
+Element Number 27 is {13} 
+Element Number 28 is {26} 
+Element Number 29 is {40} 
+Element Number 30 is {19} 
+Element Number 31 is {30} 
+Element Number 32 is {2} 
+Element Number 33 is {7} 
+Element Number 34 is {27} 
+Element Number 35 is {35} 
+Element Number 36 is {42} 
+Element Number 37 is {28} 
+Element Number 38 is {30} 
+Element Number 39 is {31} 
+Element Number 40 is {10} 
+Element Number 41 is {3} 
+Element Number 42 is {7} 
+Element Number 43 is {5} 
+Element Number 44 is {27} 
+Element Number 45 is {1} 
+Element Number 46 is {5} 
+Element Number 47 is {12} 
+Element Number 48 is {21} 
+Element Number 49 is {32} 
+Element Number 50 is {44} 
+Element Number 51 is {49} 
+Element Number 52 is {38} 
+Element Number 53 is {1} 
+Element Number 54 is {6} 
+Element Number 55 is {11} 
+Element Number 56 is {31} 
+Element Number 57 is {0} 
+Element Number 58 is {24} 
+Element Number 59 is {9} 
+Element Number 60 is {42} 
+Element Number 61 is {45} 
+Element Number 62 is {39} 
+Element Number 63 is {44} 
+Element Number 64 is {4} 
+Element Number 65 is {16} 
+Element Number 66 is {31} 
+Element Number 67 is {47} 
+Element Number 68 is {46} 
+Element Number 69 is {12} 
+Element Number 70 is {30} 
+Element Number 71 is {6} 
+Element Number 72 is {15} 
+Element Number 73 is {37} 
+Element Number 74 is {13} 
+Element Number 75 is {44} 
+Element Number 76 is {39} 
+Element Number 77 is {18} 
+Element Number 78 is {7} 
+Element Number 79 is {10} 
+Element Number 80 is {2} 
+Element Number 81 is {3} 
+Element Number 82 is {11} 
+Element Number 83 is {43} 
+Element Number 84 is {4} 
+Element Number 85 is {17} 
+Element Number 86 is {4} 
+Element Number 87 is {37} 
+Element Number 88 is {20} 
+Element Number 89 is {31} 
+Element Number 90 is {46} 
+Element Number 91 is {12} 
+Element Number 92 is {26} 
+Element Number 93 is {35} 
+Element Number 94 is {7} 
+Element Number 95 is {31} 
+Element Number 96 is {3} 
+Element Number 97 is {38} 
+Element Number 98 is {30} 
+Element Number 99 is {49} 
+Element Number 100 is {2} 
+Element Number 101 is {10} 
+Element Number 102 is {7} 
+Element Number 103 is {18} 
+Element Number 104 is {48} 
+Element Number 105 is {20} 
+Element Number 106 is {14} 
+Element Number 107 is {37} 
+Element Number 108 is {40} 
+Element Number 109 is {21} 
+Element Number 110 is {49} 
+Element Number 111 is {44} 
+Element Number 112 is {24} 
+Element Number 113 is {10} 
+Element Number 114 is {37} 
+Element Number 115 is {30} 
+Element Number 116 is {29} 
+Element Number 117 is {42} 
+Element Number 118 is {17} 
+Element Number 119 is {49} 
+Element Number 120 is {23} 
+Element Number 121 is {13} 
+Element Number 122 is {12} 
+Element Number 123 is {1} 
+Element Number 124 is {0} 
+Element Number 125 is {19} 
+Element Number 126 is {34} 
+Element Number 127 is {3} 
+Element Number 128 is {9} 
+Element Number 129 is {14} 
+Element Number 130 is {4} 
+Element Number 131 is {12} 
+Element Number 132 is {27} 
+Element Number 133 is {11} 
+Element Number 134 is {32} 
+Element Number 135 is {25} 
+Element Number 136 is {33} 
+Element Number 137 is {46} 
+Element Number 138 is {14} 
+Element Number 139 is {25} 
+Element Number 140 is {20} 
+Element Number 141 is {13} 
+Element Number 142 is {20} 
+Element Number 143 is {46} 
+Element Number 144 is {25} 
+Element Number 145 is {7} 
+Element Number 146 is {27} 
+Element Number 147 is {4} 
+Element Number 148 is {1} 
+Element Number 149 is {44} 
+Element Number 150 is {4} 
+Element Number 151 is {26} 
+Element Number 152 is {10} 
+Element Number 153 is {16} 
+Element Number 154 is {28} 
+Element Number 155 is {10} 
+Element Number 156 is {37} 
+Element Number 157 is {14} 
+Element Number 158 is {16} 
+Element Number 159 is {46} 
+Element Number 160 is {31} 
+Element Number 161 is {20} 
+Element Number 162 is {10} 
+Element Number 163 is {8} 
+Element Number 164 is {34} 
+Element Number 165 is {42} 
+Element Number 166 is {33} 
+Element Number 167 is {19} 
+Element Number 168 is {41} 
+Element Number 169 is {47} 
+Element Number 170 is {45} 
+Element Number 171 is {13} 
+Element Number 172 is {12} 
+Element Number 173 is {15} 
+Element Number 174 is {9} 
+Element Number 175 is {37} 
+Element Number 176 is {22} 
+Element Number 177 is {36} 
+Element Number 178 is {41} 
+Element Number 179 is {26} 
+Element Number 180 is {33} 
+Element Number 181 is {47} 
+Element Number 182 is {2} 
+Element Number 183 is {45} 
+Element Number 184 is {13} 
+Element Number 185 is {32} 
+Element Number 186 is {7} 
+Element Number 187 is {0} 
+Element Number 188 is {47} 
+Element Number 189 is {25} 
+Element Number 190 is {49} 
+Element Number 191 is {28} 
+Element Number 192 is {48} 
+Element Number 193 is {11} 
+Element Number 194 is {36} 
+Element Number 195 is {32} 
+Element Number 196 is {4} 
+Element Number 197 is {21} 
+Element Number 198 is {1} 
+Element Number 199 is {47} 
+Element Number 200 is {20} 
+Element Number 201 is {46} 
+Element Number 202 is {10} 
+Element Number 203 is {32} 
+Element Number 204 is {13} 
+Element Number 205 is {21} 
+Element Number 206 is {21} 
+Element Number 207 is {36} 
+Element Number 208 is {8} 
+Element Number 209 is {14} 
+Element Number 210 is {14} 
+Element Number 211 is {43} 
+Element Number 212 is {12} 
+Element Number 213 is {16} 
+Element Number 214 is {40} 
+Element Number 215 is {27} 
+Element Number 216 is {49} 
+Element Number 217 is {47} 
+Element Number 218 is {30} 
+Element Number 219 is {48} 
+Element Number 220 is {23} 
+Element Number 221 is {29} 
+Element Number 222 is {28} 
+Element Number 223 is {21} 
+Element Number 224 is {40} 
+Element Number 225 is {16} 
+Element Number 226 is {5} 
+Element Number 227 is {46} 
+Element Number 228 is {37} 
+Element Number 229 is {8} 
+Element Number 230 is {45} 
+Element Number 231 is {9} 
+Element Number 232 is {7} 
+Element Number 233 is {7} 
+Element Number 234 is {43} 
+Element Number 235 is {20} 
+Element Number 236 is {29} 
+Element Number 237 is {14} 
+Element Number 238 is {8} 
+Element Number 239 is {39} 
+Element Number 240 is {30} 
+Element Number 241 is {22} 
+Element Number 242 is {34} 
+Element Number 243 is {44} 
+Element Number 244 is {41} 
+Element Number 245 is {24} 
+Element Number 246 is {22} 
+Element Number 247 is {42} 
+Element Number 248 is {21} 
+Element Number 249 is {2} 
+Element Number 250 is {40} 
+Element Number 251 is {46} 
+Element Number 252 is {33} 
+Element Number 253 is {20} 
+Element Number 254 is {19} 
+Element Number 255 is {23} 
+
+--------------OUTPUT BUFFER AFTER SORTING--------------.
+Sorted list Element no 0 is {49} 
+Sorted list Element no 1 is {49} 
+Sorted list Element no 2 is {49} 
+Sorted list Element no 3 is {49} 
+Sorted list Element no 4 is {49} 
+Sorted list Element no 5 is {49} 
+Sorted list Element no 6 is {48} 
+Sorted list Element no 7 is {48} 
+Sorted list Element no 8 is {48} 
+Sorted list Element no 9 is {48} 
+Sorted list Element no 10 is {47} 
+Sorted list Element no 11 is {47} 
+Sorted list Element no 12 is {47} 
+Sorted list Element no 13 is {47} 
+Sorted list Element no 14 is {47} 
+Sorted list Element no 15 is {47} 
+Sorted list Element no 16 is {46} 
+Sorted list Element no 17 is {46} 
+Sorted list Element no 18 is {46} 
+Sorted list Element no 19 is {46} 
+Sorted list Element no 20 is {46} 
+Sorted list Element no 21 is {46} 
+Sorted list Element no 22 is {46} 
+Sorted list Element no 23 is {46} 
+Sorted list Element no 24 is {45} 
+Sorted list Element no 25 is {45} 
+Sorted list Element no 26 is {45} 
+Sorted list Element no 27 is {45} 
+Sorted list Element no 28 is {45} 
+Sorted list Element no 29 is {45} 
+Sorted list Element no 30 is {44} 
+Sorted list Element no 31 is {44} 
+Sorted list Element no 32 is {44} 
+Sorted list Element no 33 is {44} 
+Sorted list Element no 34 is {44} 
+Sorted list Element no 35 is {44} 
+Sorted list Element no 36 is {44} 
+Sorted list Element no 37 is {44} 
+Sorted list Element no 38 is {43} 
+Sorted list Element no 39 is {43} 
+Sorted list Element no 40 is {43} 
+Sorted list Element no 41 is {43} 
+Sorted list Element no 42 is {42} 
+Sorted list Element no 43 is {42} 
+Sorted list Element no 44 is {42} 
+Sorted list Element no 45 is {42} 
+Sorted list Element no 46 is {42} 
+Sorted list Element no 47 is {41} 
+Sorted list Element no 48 is {41} 
+Sorted list Element no 49 is {41} 
+Sorted list Element no 50 is {40} 
+Sorted list Element no 51 is {40} 
+Sorted list Element no 52 is {40} 
+Sorted list Element no 53 is {40} 
+Sorted list Element no 54 is {40} 
+Sorted list Element no 55 is {39} 
+Sorted list Element no 56 is {39} 
+Sorted list Element no 57 is {39} 
+Sorted list Element no 58 is {39} 
+Sorted list Element no 59 is {38} 
+Sorted list Element no 60 is {38} 
+Sorted list Element no 61 is {38} 
+Sorted list Element no 62 is {37} 
+Sorted list Element no 63 is {37} 
+Sorted list Element no 64 is {37} 
+Sorted list Element no 65 is {37} 
+Sorted list Element no 66 is {37} 
+Sorted list Element no 67 is {37} 
+Sorted list Element no 68 is {37} 
+Sorted list Element no 69 is {36} 
+Sorted list Element no 70 is {36} 
+Sorted list Element no 71 is {36} 
+Sorted list Element no 72 is {35} 
+Sorted list Element no 73 is {35} 
+Sorted list Element no 74 is {34} 
+Sorted list Element no 75 is {34} 
+Sorted list Element no 76 is {34} 
+Sorted list Element no 77 is {33} 
+Sorted list Element no 78 is {33} 
+Sorted list Element no 79 is {33} 
+Sorted list Element no 80 is {33} 
+Sorted list Element no 81 is {33} 
+Sorted list Element no 82 is {33} 
+Sorted list Element no 83 is {33} 
+Sorted list Element no 84 is {32} 
+Sorted list Element no 85 is {32} 
+Sorted list Element no 86 is {32} 
+Sorted list Element no 87 is {32} 
+Sorted list Element no 88 is {32} 
+Sorted list Element no 89 is {32} 
+Sorted list Element no 90 is {31} 
+Sorted list Element no 91 is {31} 
+Sorted list Element no 92 is {31} 
+Sorted list Element no 93 is {31} 
+Sorted list Element no 94 is {31} 
+Sorted list Element no 95 is {31} 
+Sorted list Element no 96 is {31} 
+Sorted list Element no 97 is {30} 
+Sorted list Element no 98 is {30} 
+Sorted list Element no 99 is {30} 
+Sorted list Element no 100 is {30} 
+Sorted list Element no 101 is {30} 
+Sorted list Element no 102 is {30} 
+Sorted list Element no 103 is {30} 
+Sorted list Element no 104 is {29} 
+Sorted list Element no 105 is {29} 
+Sorted list Element no 106 is {29} 
+Sorted list Element no 107 is {28} 
+Sorted list Element no 108 is {28} 
+Sorted list Element no 109 is {28} 
+Sorted list Element no 110 is {28} 
+Sorted list Element no 111 is {28} 
+Sorted list Element no 112 is {27} 
+Sorted list Element no 113 is {27} 
+Sorted list Element no 114 is {27} 
+Sorted list Element no 115 is {27} 
+Sorted list Element no 116 is {27} 
+Sorted list Element no 117 is {27} 
+Sorted list Element no 118 is {26} 
+Sorted list Element no 119 is {26} 
+Sorted list Element no 120 is {26} 
+Sorted list Element no 121 is {26} 
+Sorted list Element no 122 is {26} 
+Sorted list Element no 123 is {25} 
+Sorted list Element no 124 is {25} 
+Sorted list Element no 125 is {25} 
+Sorted list Element no 126 is {25} 
+Sorted list Element no 127 is {24} 
+Sorted list Element no 128 is {24} 
+Sorted list Element no 129 is {24} 
+Sorted list Element no 130 is {23} 
+Sorted list Element no 131 is {23} 
+Sorted list Element no 132 is {23} 
+Sorted list Element no 133 is {23} 
+Sorted list Element no 134 is {23} 
+Sorted list Element no 135 is {23} 
+Sorted list Element no 136 is {22} 
+Sorted list Element no 137 is {22} 
+Sorted list Element no 138 is {22} 
+Sorted list Element no 139 is {21} 
+Sorted list Element no 140 is {21} 
+Sorted list Element no 141 is {21} 
+Sorted list Element no 142 is {21} 
+Sorted list Element no 143 is {21} 
+Sorted list Element no 144 is {21} 
+Sorted list Element no 145 is {21} 
+Sorted list Element no 146 is {21} 
+Sorted list Element no 147 is {20} 
+Sorted list Element no 148 is {20} 
+Sorted list Element no 149 is {20} 
+Sorted list Element no 150 is {20} 
+Sorted list Element no 151 is {20} 
+Sorted list Element no 152 is {20} 
+Sorted list Element no 153 is {20} 
+Sorted list Element no 154 is {20} 
+Sorted list Element no 155 is {19} 
+Sorted list Element no 156 is {19} 
+Sorted list Element no 157 is {19} 
+Sorted list Element no 158 is {19} 
+Sorted list Element no 159 is {19} 
+Sorted list Element no 160 is {18} 
+Sorted list Element no 161 is {18} 
+Sorted list Element no 162 is {17} 
+Sorted list Element no 163 is {17} 
+Sorted list Element no 164 is {16} 
+Sorted list Element no 165 is {16} 
+Sorted list Element no 166 is {16} 
+Sorted list Element no 167 is {16} 
+Sorted list Element no 168 is {16} 
+Sorted list Element no 169 is {15} 
+Sorted list Element no 170 is {15} 
+Sorted list Element no 171 is {14} 
+Sorted list Element no 172 is {14} 
+Sorted list Element no 173 is {14} 
+Sorted list Element no 174 is {14} 
+Sorted list Element no 175 is {14} 
+Sorted list Element no 176 is {14} 
+Sorted list Element no 177 is {14} 
+Sorted list Element no 178 is {13} 
+Sorted list Element no 179 is {13} 
+Sorted list Element no 180 is {13} 
+Sorted list Element no 181 is {13} 
+Sorted list Element no 182 is {13} 
+Sorted list Element no 183 is {13} 
+Sorted list Element no 184 is {13} 
+Sorted list Element no 185 is {12} 
+Sorted list Element no 186 is {12} 
+Sorted list Element no 187 is {12} 
+Sorted list Element no 188 is {12} 
+Sorted list Element no 189 is {12} 
+Sorted list Element no 190 is {12} 
+Sorted list Element no 191 is {12} 
+Sorted list Element no 192 is {11} 
+Sorted list Element no 193 is {11} 
+Sorted list Element no 194 is {11} 
+Sorted list Element no 195 is {11} 
+Sorted list Element no 196 is {10} 
+Sorted list Element no 197 is {10} 
+Sorted list Element no 198 is {10} 
+Sorted list Element no 199 is {10} 
+Sorted list Element no 200 is {10} 
+Sorted list Element no 201 is {10} 
+Sorted list Element no 202 is {10} 
+Sorted list Element no 203 is {10} 
+Sorted list Element no 204 is {10} 
+Sorted list Element no 205 is {9} 
+Sorted list Element no 206 is {9} 
+Sorted list Element no 207 is {9} 
+Sorted list Element no 208 is {9} 
+Sorted list Element no 209 is {8} 
+Sorted list Element no 210 is {8} 
+Sorted list Element no 211 is {8} 
+Sorted list Element no 212 is {8} 
+Sorted list Element no 213 is {7} 
+Sorted list Element no 214 is {7} 
+Sorted list Element no 215 is {7} 
+Sorted list Element no 216 is {7} 
+Sorted list Element no 217 is {7} 
+Sorted list Element no 218 is {7} 
+Sorted list Element no 219 is {7} 
+Sorted list Element no 220 is {7} 
+Sorted list Element no 221 is {7} 
+Sorted list Element no 222 is {7} 
+Sorted list Element no 223 is {6} 
+Sorted list Element no 224 is {6} 
+Sorted list Element no 225 is {6} 
+Sorted list Element no 226 is {5} 
+Sorted list Element no 227 is {5} 
+Sorted list Element no 228 is {5} 
+Sorted list Element no 229 is {5} 
+Sorted list Element no 230 is {4} 
+Sorted list Element no 231 is {4} 
+Sorted list Element no 232 is {4} 
+Sorted list Element no 233 is {4} 
+Sorted list Element no 234 is {4} 
+Sorted list Element no 235 is {4} 
+Sorted list Element no 236 is {4} 
+Sorted list Element no 237 is {3} 
+Sorted list Element no 238 is {3} 
+Sorted list Element no 239 is {3} 
+Sorted list Element no 240 is {3} 
+Sorted list Element no 241 is {2} 
+Sorted list Element no 242 is {2} 
+Sorted list Element no 243 is {2} 
+Sorted list Element no 244 is {2} 
+Sorted list Element no 245 is {2} 
+Sorted list Element no 246 is {2} 
+Sorted list Element no 247 is {1} 
+Sorted list Element no 248 is {1} 
+Sorted list Element no 249 is {1} 
+Sorted list Element no 250 is {1} 
+Sorted list Element no 251 is {1} 
+Sorted list Element no 252 is {1} 
+Sorted list Element no 253 is {0} 
+Sorted list Element no 254 is {0} 
+Sorted list Element no 255 is {0} 
+Total time taken for system call -> 0.030000
+
