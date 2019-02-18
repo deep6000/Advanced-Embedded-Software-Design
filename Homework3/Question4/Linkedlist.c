@@ -201,7 +201,7 @@ start_time = (time.tv_nsec)/1000;
 		printk(" Filter Chosen : Count Greater Than =[ %d].\n", CountGreaterThan);
 		list_for_each_entry(my_obj1,&NoDuplicate_list,Unique_list)
 		{
-			/* Check if animal in unique list matches the filter requested by user */
+			
 			if( my_obj1->AnimalCount > CountGreaterThan) 
 			{
 				/* Allocate memory */
@@ -213,8 +213,8 @@ start_time = (time.tv_nsec)/1000;
 				}
 				ptrfilter1->FilteredAnimals = my_obj1->UniqueAnimal;
 				ptrfilter1->AnimalFCount = my_obj1->AnimalCount;
-				list_add(&ptrfilter1->Filtered_list, &MyFiltered_list); //Add filtered animals to the second list
-				node_filterct++; //Track number of nodes allocated
+				list_add(&ptrfilter1->Filtered_list, &MyFiltered_list); 
+				node_filterct++; 
 				printk("Animal: [%s] \t\t Count: [%d]\n",ptrfilter1->FilteredAnimals,my_obj1->AnimalCount);
 				break;
 			}
@@ -309,5 +309,5 @@ static void AnimalDataSortExit(void)
 	printk("Exiting Module");
  printk("Exit Module Time Taken :%lu us",end_time-start_time);
 }
-module_init(AnimalDataSortInit); //registers module entry point
-module_exit(AnimalDataSortExit); //registers module exit point
+module_init(AnimalDataSortInit);
+module_exit(AnimalDataSortExit); 
