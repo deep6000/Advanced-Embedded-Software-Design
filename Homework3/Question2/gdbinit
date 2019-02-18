@@ -1,0 +1,9 @@
+target extended-remote 10.0.0.223:5560
+remote put /home/deepesh/buildroot/buildroot/SCP_FOLDER/mean /usr/bin/exec/mean
+set remote exec-file /usr/bin/exec/mean
+file mean
+b main
+b 15
+b 18
+run
+
