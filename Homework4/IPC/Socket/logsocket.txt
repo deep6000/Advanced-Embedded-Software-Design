@@ -1,14 +1,14 @@
 ----------------------------------------------------------------------------------------
 				Process Info
 ----------------------------------------------------------------------------------------
-Time: 3507 Seconds 818452 Microseconds
+Time: 3497 Seconds 818122 Microseconds
 Process Name : Process 1 	Process PID 1131
 IPC Method : Socket
 File Descriptor : 3
  ----------------------------------------------------------------------------------------
 			 Socket Binded
 ----------------------------------------------------------------------------------------
-Time: 3507 Seconds 818452 Microseconds
+Time: 3497 Seconds 818452 Microseconds
 Peer Address: 127.0.0.1
 Time: 3510 Seconds 718632 Microseconds
 Size: 28
@@ -21,7 +21,7 @@ Time: 3510 Seconds 721600 Microseconds
 ----------------------------------------------------------------------------------------
 				Process Info
 ----------------------------------------------------------------------------------------
-Time: 3520 Seconds 818445 Microseconds
+Time: 3504 Seconds 818445 Microseconds
 Process Name : Process 2	Process PID 1132
 IPC Method : Socket
 File Descriptor : 3
