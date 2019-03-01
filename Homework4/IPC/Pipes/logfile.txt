@@ -1,0 +1,42 @@
+----------------------------------------------------------------------------------------
+				Process Info
+----------------------------------------------------------------------------------------
+Time: 1551401716 Seconds 383332 Microseconds
+Process Name : Child	Process PID 13101
+IPC Method : Pipes
+File Descriptor : 3
+ ----------------------------------------------------------------------------------------
+			Child : Reading from the Parent process
+----------------------------------------------------------------------------------------
+Time: 1551401716 Seconds 383388 Microseconds
+Message Received - From PID 13100 
+ Message Length - 14 
+ USRLED - 0
+----------------------------------------------------------------------------------------
+			Child : Sending Message to the Parent process
+
+----------------------------------------------------------------------------------------
+Time: 1551401716 Seconds 383396 Microseconds
+Message sent to Parent
+----------------------------------------------------------------------------------------
+				Process Info
+----------------------------------------------------------------------------------------
+Time: 1551401716 Seconds 383210 Microseconds
+Process Name : Parent	Process PID 13100
+IPC Method : Pipes
+File Descriptor : 3
+ ----------------------------------------------------------------------------------------
+			Parent : Sending Message to the Child process
+
+----------------------------------------------------------------------------------------
+Time: 1551401716 Seconds 383232 Microseconds
+Message Sent to Child Process
+----------------------------------------------------------------------------------------
+			Parent : Receiving Message from the Child process
+
+----------------------------------------------------------------------------------------
+Time: 1551401716 Seconds 383737 Microseconds
+Message Received - From PID 13101 
+ Message Length - 14 
+ USRLED - 1
+Exiting Pipes

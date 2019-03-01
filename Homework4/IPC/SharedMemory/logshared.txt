@@ -1,0 +1,20 @@
+Starting Process 1
+----------------------------------------------------------------------------------------
+				Process Info
+----------------------------------------------------------------------------------------
+Time: 1551417550 Seconds 730289 Microseconds
+Process Name : Process 1 	Process PID 2367
+IPC Method : Queues
+File Descriptor : 3
+ ----------------------------------------------------------------------------------------
+			 Process 1 :  Copying  to Shared memory
+----------------------------------------------------------------------------------------
+Time: 1551417550 Seconds 730289 Microseconds
+----------------------------------------------------------------------------------------
+			 Process 1 : Reading from Shared memory
+----------------------------------------------------------------------------------------
+Time: 1551417550 Seconds 730289 Microseconds
+[INFO] Message From Process 2 through Shared Mem
+{Message: Hello from Process2 from PID 2367
+MessageLen: 33
+USRLED: 1}

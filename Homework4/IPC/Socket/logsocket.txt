@@ -1,0 +1,31 @@
+----------------------------------------------------------------------------------------
+				Process Info
+----------------------------------------------------------------------------------------
+Time: 3507 Seconds 818452 Microseconds
+Process Name : Process 1 	Process PID 1131
+IPC Method : Socket
+File Descriptor : 3
+ ----------------------------------------------------------------------------------------
+			 Socket Binded
+----------------------------------------------------------------------------------------
+Time: 3507 Seconds 818452 Microseconds
+Peer Address: 127.0.0.1
+Time: 3510 Seconds 718632 Microseconds
+Size: 28
+Message Received 
+Message: From Client PID :1132 Length: 21
+USRLED: 1
+Time: 3510 Seconds 721600 Microseconds
+
+
+----------------------------------------------------------------------------------------
+				Process Info
+----------------------------------------------------------------------------------------
+Time: 3515 Seconds 818445 Microseconds
+Process Name : Process 2	Process PID 1132
+IPC Method : Socket
+File Descriptor : 3
+Message sent 
+Message: From Client PID :1132 Length: 21
+USRLED: 1
+Time: 3505 Seconds 713450 Microseconds

@@ -1,0 +1,39 @@
+---------------------------------------------------------------------------------------
+                                Process Info
+----------------------------------------------------------------------------------------
+Time: 1339 Seconds 475152 Microseconds
+Process Name : Process 2        Process PID 1114
+IPC Method : Shared memory
+File Descriptor : 3
+ ----------------------------------------------------------------------------------------
+                         Process 2: Reading from Shared memory
+----------------------------------------------------------------------------------------
+Time: 1341 Seconds 95973 Microseconds
+[INFO] Message From Proc 1 through Shared Mem
+{Message: Hello from Process1 from PID 1115
+MessageLen: 33
+USRLED: 1}
+----------------------------------------------------------------------------------------
+                         Process 2 : Copying to Shared memory
+----------------------------------------------------------------------------------------
+Time: 1341 Seconds 96378 Microseconds
+Starting Process 1
+----------------------------------------------------------------------------------------
+                                Process Info
+----------------------------------------------------------------------------------------
+Time: 1341 Seconds 95247 Microseconds
+Process Name : Process 1        Process PID 1115
+IPC Method : Queues
+File Descriptor : 3
+ ----------------------------------------------------------------------------------------
+                         Process 1 :  Copying  to Shared memory
+----------------------------------------------------------------------------------------
+Time: 1341 Seconds 95247 Microseconds
+----------------------------------------------------------------------------------------
+                         Process 1 : Reading from Shared memory
+----------------------------------------------------------------------------------------
+Time: 1341 Seconds 95247 Microseconds
+[INFO] Message From Process 2 through Shared Mem
+{Message: Hello this is Process 2  PID 1114
+MessageLen: 33
+USRLED: 1}
