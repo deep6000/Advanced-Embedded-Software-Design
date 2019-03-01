@@ -33,9 +33,31 @@ typedef struct
 	bool USRLED;
 }Message;
 
+int killer = 0;
+
+void KILLFUNC(int signum)
+{
+killer =1 ;
+}
+
+int SigactionSetup()
+{
+
+ 	
+	struct sigaction SigAct;
+
+	memset(&SigAct, 0, sizeof(SigAct));
+	SigAct.sa_handler= KILLFUNC;
+
+
+	if(sigaction(SIGINT,&SigAct,NULL)== -1)
+	perror("Sigaction Failed");
+	
+}
 
 int main()
 {
+	SigactionSetup();
 	struct timeval t;
 	FILE *fptr;
 	fptr = fopen(FileName, "a");
@@ -70,7 +92,9 @@ int main()
 	fprintf(fptr, "IPC Method : Queue\n");
 	fprintf(fptr, "File Descriptor : %d\n ",fileno(fptr));
 	msgrecptr= (char*)&MessageReceive;
-	
+	while(!killer)
+	{
+	sleep(1);
 	int status = mq_receive(mq, msgrecptr, sizeof(MessageReceive),0);
 	if(status == -1)
 	{
@@ -114,6 +138,9 @@ int main()
 	
 
 
+	}
+	
+	fprintf(fptr, "SIGINT RECEIVED\n");
 	mq_close(mq);
 	
 	gettimeofday(&t,NULL);

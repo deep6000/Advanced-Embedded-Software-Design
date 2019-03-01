@@ -1,4 +1,4 @@
-/*
+\/*
 *File Name: pthreads.c
 *Description: InterProcess Communication between 2 process using pipes  
 *Author: Deepesh Sonigra
@@ -34,21 +34,10 @@ typedef struct {
 	int BufLen;
 	bool USRLED;
 }Message;
+int killer = 0;
 
-int killer=0;
-
-//int Mask(){
-/*http://man7.org/linux/man-pages/man3/pthread_sigmask.3.html*/
-
-/*	sigset_t set;
-	sigemptyset(&set);
-	sigaddset(&set,SIGINT);
-
-	return 0;
-}
-void SignalHandler(int signal, siginfo_t *siginfo, void *ucontext)
+void KILLFUNC(int signum)
 {
-if(signal == SIGINT)
 killer =1 ;
 }
 
@@ -59,17 +48,17 @@ int SigactionSetup()
 	struct sigaction SigAct;
 
 	memset(&SigAct, 0, sizeof(SigAct));
-	SigAct.sa_sigaction = SignalHandler;
-	SigAct.sa_flags = SA_SIGINFO;
+	SigAct.sa_handler= KILLFUNC;
 
 
 	if(sigaction(SIGINT,&SigAct,NULL)== -1)
 	perror("Sigaction Failed");
 	
-}*/
+}
+
 int main()
 {
-	//Mask();
+	SigactionSetup();
 	int PipeP2C[2];
 	int PipeC2P[2];
 	struct timeval t;
@@ -88,25 +77,28 @@ int main()
 	perror("Error:Opeining Log File");
 	}
 
-	 if (pipe(PipeP2C)==-1)
-    {
-        perror("Pipe Parent to Child Failed");
-        return 1;
-    }
-    if (pipe(PipeC2P)==-1)
-    {
-        perror("Pipe Child to Parent Failed\n");
-        return 1;
-    }
-
-	process = fork();
-	switch (process)
+	if (pipe(PipeP2C)==-1)
+    	{
+    	perror("Pipe Parent to Child Failed");
+    	return 1;
+    	}
+    	if (pipe(PipeC2P)==-1)
+   	{
+    	perror("Pipe Child to Parent Failed\n");
+    	return 1;
+    	}
+	while(1)
 	{
-		case -1 :
+	if(killer)
+	break;
+		sleep(1);
+		process = fork();
+		if(process == -1)
 		perror("FORK ERROR");
-		break;
+		
 
-		case 0 : //Child Process
+		if(process == 0) //Child Process
+		{		
 		close(PipeP2C[1]);
 		close(PipeC2P[0]);
 		gettimeofday(&t,NULL);
@@ -140,10 +132,11 @@ int main()
 		fprintf(fptr,"Time: %lu Seconds %lu Microseconds\n",t.tv_sec,t.tv_usec );
 		fprintf(fptr, "Message sent to Parent\n");
 		close(PipeC2P[1]);
-		exit(0);
-		break;
+		//exit(0);
+		}
 
-		default:
+		else if(process > 0)
+		{
 		close(PipeP2C[0]);
 		sprintf(ParentMessage.Buffer,"From PID %d", getpid());
 		ParentMessage.BufLen= strlen(ParentMessage.Buffer);
@@ -183,24 +176,20 @@ int main()
 		Parentptr = (Message*)ParentReadBuf;
 		fprintf(fptr,"Time: %lu Seconds %lu Microseconds\n",t.tv_sec,t.tv_usec );
 		fprintf(fptr, "Message Received - %s \n Message Length - %d \n USRLED - %d\n", Parentptr->Buffer,Parentptr->BufLen,Parentptr->USRLED);
-		close(PipeC2P[0]);
-		fprintf(fptr, "Exiting Pipes\n");	
-		exit(0);
-		break;		
-	}
-
-	while(1)
-	{
-		if(killer)
-		{
-		fprintf(fptr, "Kill Signal Received\n");
-		fclose(fptr);
-		printf("Signal Kill");
-		killer=0;		
-		break;
+		close(PipeC2P[0]);	
+		//exit(0);
+			
 		}
-	}		
+
+		
+   }
+	
+		
+		fprintf(fptr, "Exiting Pipes\n");
+		fprintf(fptr, "Received SIGINT\n");
+		fclose(fptr);
+		exit(0);		
+
 }	
 
 	
-

@@ -33,9 +33,31 @@ typedef struct
 	bool USRLED;
 }Message;
 
+int killer = 0;
+
+void KILLFUNC(int signum)
+{
+killer =1 ;
+}
+
+int SigactionSetup()
+{
+
+ 	
+	struct sigaction SigAct;
+
+	memset(&SigAct, 0, sizeof(SigAct));
+	SigAct.sa_handler= KILLFUNC;
+
+
+	if(sigaction(SIGINT,&SigAct,NULL)== -1)
+	perror("Sigaction Failed");
+	
+}
 
 int main()
 {
+	SigactionSetup();
 	struct timeval t;
 	FILE *fptr;
 	fptr = fopen(FileName, "a");
@@ -75,6 +97,9 @@ int main()
 	MessageSend.BufLen= strlen(MessageSend.Buffer);
 	MessageSend.USRLED = true;
 
+		while(!killer)
+	{	
+	sleep(1);
 	gettimeofday(&t,NULL);
 	int status = mq_send(mq ,msgsendptr, sizeof(MessageSend),0);
 	if(status == -1)
@@ -82,6 +107,7 @@ int main()
 		perror("Error Send Message\n");
 		return -1;
 	}
+
 
 	fprintf(fptr, "----------------------------------------------------------------------------------------\n");	
 		fprintf(fptr, "\t\t\t Sending to Process 2\n" );
@@ -114,6 +140,12 @@ int main()
 	fprintf(fptr,"Time: %lu Seconds %lu Microseconds\n",t.tv_sec,t.tv_usec );
 	fprintf(fptr,"Message received from Process 2 \n Message = %s\n , Length = %d\n USRLED = %d\n", MessageReceive.Buffer,MessageReceive.BufLen, MessageReceive.USRLED);
 
+	
+
+	}
+	
+	fprintf(fptr,"SIGINT RECEIVED\n");
+
 	mq_close(mq);
 	mq_unlink(QUEUENAME);
 	gettimeofday(&t,NULL);
@@ -123,7 +155,9 @@ int main()
 		fprintf(fptr, "----------------------------------------------------------------------------------------\n");
 	fprintf(fptr,"Time: %lu Seconds %lu Microseconds\n",t.tv_sec,t.tv_usec );
 	printf("QUEUE destroyed\n");
+	fclose(fptr);
 	return 0;
+
 
 
 }

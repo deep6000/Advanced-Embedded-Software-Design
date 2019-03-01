@@ -37,10 +37,28 @@ typedef struct{
     bool USRLED;
 }Message;
 
+void KILLFUNC(int signum)
+{
+killer =1 ;
+}
 
-int main()
+int SigactionSetup()
 {
 
+ 	
+	struct sigaction SigAct;
+
+	memset(&SigAct, 0, sizeof(SigAct));
+	SigAct.sa_handler= KILLFUNC;
+
+
+	if(sigaction(SIGINT,&SigAct,NULL)== -1)
+	perror("Sigaction Failed");
+	
+}
+int main()
+{
+	SigactionSetup();
 	struct timeval t;
 	FILE *fptr;
 	fptr = fopen(FileName, "a");
@@ -69,14 +87,12 @@ int main()
 		printf("[ERROR] Shared Mem);
 		return -1;
 	}
-
 	void *shared_mem = mmap(NULL, SHARED_MEM_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED , Shared_mem, 0);
 	if(shared_mem == (void*)-1)
 	{
 		printf("[ERROR] mmap error");
 		return -1;
 	}
-
 	
 	sem_t *sem = sem_open(SEMAPHORE, O_CREAT, 0666, 0);
 	if(SEM_FAILED == sem)
@@ -84,24 +100,21 @@ int main()
 		printf("[ERROR] Sem open Failed:%s\n",strerror(errno));
 		return -1;	
 	}
+	while(!killer)
+	{
+	
 	sem_wait(sem);
-
 char *msgptr = (char*)&MessageReceive;
-
 	gettimeofday(&t,NULL);
     memcpy(msgptr,(char*)shared_mem,SHARED_MEM_SIZE);
-
     fprintf(fptr, "----------------------------------------------------------------------------------------\n");	
 	fprintf(fptr, "\t\t\t Process 2: Reading from Shared memory\n" );
 	fprintf(fptr, "----------------------------------------------------------------------------------------\n");
-
 	fprintf(fptr,"Time: %lu Seconds %lu Microseconds\n",t.tv_sec,t.tv_usec );
     fprintf(fptr," Message From Process 1 Shared Memory \n{Message: %s\nMessageLen: %d\nUSRLED: %d}\n",MessageReceive.Buffer,MessageReceive.BufLen,MessageReceive.USRLED);
-
  
     
     msgptr = (char*)&MessageSend;
-
     sprintf(MessageSend.Buffer,"Hello this is Process 2  PID %d",getpid());
     MessageSend.BufLen = strlen(MessageSend.Buffer);
     MessageSend.USRLED = 1;
@@ -109,15 +122,13 @@ char *msgptr = (char*)&MessageReceive;
   fprintf(fptr, "----------------------------------------------------------------------------------------\n");	
 	fprintf(fptr, "\t\t\t Process 2 : Copying to Shared memory\n" );
 	fprintf(fptr, "----------------------------------------------------------------------------------------\n");
-
 	fprintf(fptr,"Time: %lu Seconds %lu Microseconds\n",t.tv_sec,t.tv_usec );
    
     memcpy((char*)shared_mem, msgptr, SHARED_MEM_SIZE);
-
   
     sem_post(sem);
-
-	
+	}
+	fprintf(fptr,"SIGINT RECEIVED\n");
 	close(Shared_mem);
 	
 	

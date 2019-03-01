@@ -21,11 +21,42 @@ Time: 3510 Seconds 721600 Microseconds
 ----------------------------------------------------------------------------------------
 				Process Info
 ----------------------------------------------------------------------------------------
-Time: 3515 Seconds 818445 Microseconds
+Time: 3520 Seconds 818445 Microseconds
 Process Name : Process 2	Process PID 1132
 IPC Method : Socket
 File Descriptor : 3
 Message sent 
-Message: From Client PID :1132 Length: 21
+Message: From Server PID :1133 Length: 21
 USRLED: 1
 Time: 3505 Seconds 713450 Microseconds
+
+Time: 3510 Seconds 718632 Microseconds
+Size: 28
+Message Received 
+Message: From Client PID :1132 Length: 21
+USRLED: 1
+
+Message sent 
+Message: From Server PID :1133 Length: 21
+USRLED: 1
+Time: 3505 Seconds 713450 Microseconds
+Time: 3510 Seconds 718632 Microseconds
+Size: 28
+Message Received 
+Message: From Client PID :1132 Length: 21
+USRLED: 1
+
+Message sent 
+Message: From Server PID :1133 Length: 21
+USRLED: 1
+Time: 3515 Seconds 132440 Microseconds
+
+
+Time: 3520 Seconds 863112 Microseconds
+Size: 28
+Message Received 
+Message: From Client PID :1132 Length: 21
+USRLED: 1
+
+Time: 3525 Seconds 160022 Microseconds
+SIGINT RECEIVED

@@ -1,13 +1,27 @@
-#include <sys/socket.h>
-#include <unistd.h>
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
+\#include <sys/socket.h>
+
 #include <netinet/in.h>
 #include <arpa/inet.h>
-#include<time.h>
-#include<sys/time.h>
 
+#include <sys/stat.h>        
+#include <mqueue.h>
+#include <errno.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdint.h>
+#include<sched.h>
+#include <time.h>
+#include <unistd.h>
+#include <ctype.h>
+#include <sys/types.h>
+#include <sys/syscall.h>
+#include <semaphore.h>
+#include <sys/time.h>
+#include <sys/wait.h>
+#include <signal.h>
+#include <stdbool.h>
+#include<fcntl.h>
 
 #define PORT 	2000
 #define IP		
@@ -19,9 +33,31 @@ typedef struct{
     uint8_t USRLED:1;
 }Message;
 
+int killer = 0;
+
+void KILLFUNC(int signum)
+{
+killer =1 ;
+}
+
+int SigactionSetup()
+{
+
+ 	
+	struct sigaction SigAct;
+
+	memset(&SigAct, 0, sizeof(SigAct));
+	SigAct.sa_handler= KILLFUNC;
+
+
+	if(sigaction(SIGINT,&SigAct,NULL)== -1)
+	perror("Sigaction Failed");
+	
+}
 
 int main()
 {
+	SigactionSetup();
 	struct timeval t;
 	FILE *fptr;
 	fptr = fopen(FileName, "a");
@@ -115,7 +151,9 @@ fprintf(fptr,"Peer Address: %s\n",inet_ntop(AF_INET, &Peer_address.sin_addr, Pee
 fprintf(fptr,"Time: %lu Seconds %lu Microseconds\n",t.tv_sec,t.tv_usec );
 		printf("[INFO] Peer Addr: %s\n",inet_ntop(AF_INET, &Peer_address.sin_addr, PeerIP_Addr, sizeof(PeerIP_Addr)));
 
-		
+		while (!killer)
+		{
+		sleep(1);
 		Byte_read = read(accepted_socket, &MessageLen, sizeof(int));
 
 		if(Byte_read == sizeof(int))
@@ -144,6 +182,8 @@ fprintf(fptr,"Time: %lu Seconds %lu Microseconds\n",t.tv_sec,t.tv_usec );
 	
 
 		send(accepted_socket , "ACK" , 4, 0);
+		}
+		fprintf(fptr,"SIGINT RECEIVED");
 		close(accepted_socket);
 
 	return 0;

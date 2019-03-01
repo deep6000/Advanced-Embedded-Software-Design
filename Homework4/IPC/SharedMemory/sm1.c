@@ -34,29 +34,50 @@
 #define SEMAPHORE_NAME "/sem_shared_mem"
 #define FileName "logshared.txt"
 
-#define LOG(format, ...) printf("[PID:%d] ",getpid()); printf(format, ##__VA_ARGS__)
+
 
 typedef struct{
     char Buffer[256];
     int BufLen;
     uint8_t USRLED:1;
 }Message;
+int killer = 0;
 
+void KILLFUNC(int signum)
+{
+killer =1 ;
+}
+
+int SigactionSetup()
+{
+
+ 	
+	struct sigaction SigAct;
+
+	memset(&SigAct, 0, sizeof(SigAct));
+	SigAct.sa_handler= KILLFUNC;
+
+
+	if(sigaction(SIGINT,&SigAct,NULL)== -1)
+	perror("Sigaction Failed");
+	
+}
 int main()
 {
 	struct timeval t;
 	FILE *fptr;
 	fptr= fopen(FileName,"a");
+	SigactionSetup();
 	if(fptr == NULL)
 	{
-	perror("Error:Opening Log File");
+	perror("Error:Opening printf File");
 	}
 	fprintf(fptr, "Starting Process 1\n");
-	LOG("[INFO] Starting the process 1\n");	
+	printf("[INFO] Starting the process 1\n");	
 	int SharedMem = shm_open(SHARED_MEMORY_NAME, O_CREAT | O_RDWR, 0666);
 	if(SharedMem < 0)
 	{
-		LOG("[ERROR] Cannot open Shared Mem: %s",strerror(errno));
+		printf("[ERROR] Cannot open Shared Memory");
 		return -1;
 	}
 	gettimeofday(&t,NULL);
@@ -85,7 +106,7 @@ int main()
 	sem_t *sem = sem_open(SEMAPHORE_NAME, O_CREAT, 0666, 0);
 	if(SEM_FAILED == sem)
 	{
-		LOG("[ERROR] Sem open Failed:%s\n",strerror(errno));
+		printf("[ERROR] Sem open Failed:%s\n",strerror(errno));
 		return -1;	
 	}
 
@@ -97,7 +118,10 @@ int main()
     MessageSend.BufLen = strlen(MessageSend.Buffer);
     MessageSend.USRLED = 1;
 
-
+		while(!killer)
+	{	
+	sleep(1);
+gettimeofday(&t,NULL);
 	fprintf(fptr, "----------------------------------------------------------------------------------------\n");	
 		fprintf(fptr, "\t\t\t Process 1 :  Copying  to Shared memory\n" );
 		fprintf(fptr, "----------------------------------------------------------------------------------------\n");
@@ -121,12 +145,12 @@ int main()
 		fprintf(fptr, "----------------------------------------------------------------------------------------\n");
 
 	fprintf(fptr,"Time: %lu Seconds %lu Microseconds\n",t.tv_sec,t.tv_usec );
-    fprintf(fptr,"[INFO] Message From Process 2 through Shared Mem\n{Message: %s\nMessageLen: %d\nUSRLED: %d}\n",MessageReceive.Buffer,MessageReceive.BufLen,MessageReceive.USRLED);
+    fprintf(fptr,"Message From Process 2 through Shared Mem\n{Message: %s\nMessageLen: %d\nUSRLED: %d}\n",MessageReceive.Buffer,MessageReceive.BufLen,MessageReceive.USRLED);
 
-    LOG("[INFO] Message From Process 2 through Shared Mem\n{Message: %s\nMessageLen: %d\nUSRLED: %d}\n",MessageReceive.Buffer,MessageReceive.BufLen,MessageReceive.USRLED);
 
+	fprintf(fptr,"SIGINT RECEIVED\n");
 	
-	status = shm_unlink(SHARED_MEMORY_NAME);
+	 shm_unlink(SHARED_MEMORY_NAME);
 	
 
 	return 0;

@@ -1,10 +1,27 @@
 #include <sys/socket.h>
-#include <unistd.h>
-#include <stdlib.h>
+
 #include <netinet/in.h>
-#include <string.h>
-#include <stdio.h>
 #include <arpa/inet.h>
+
+#include <sys/stat.h>        
+#include <mqueue.h>
+#include <errno.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdint.h>
+#include<sched.h>
+#include <time.h>
+#include <unistd.h>
+#include <ctype.h>
+#include <sys/types.h>
+#include <sys/syscall.h>
+#include <semaphore.h>
+#include <sys/time.h>
+#include <sys/wait.h>
+#include <signal.h>
+#include <stdbool.h>
+#include<fcntl.h>
 
 #define PORT 2000
 #define IP "127.0.0.1"
@@ -18,11 +35,33 @@ typedef struct{
     uint8_t USRLED:1;
 }Message;
 
+int killer = 0;
+
+void KILLFUNC(int signum)
+{
+killer =1 ;
+}
+
+int SigactionSetup()
+{
+
+ 	
+	struct sigaction SigAct;
+
+	memset(&SigAct, 0, sizeof(SigAct));
+	SigAct.sa_handler= KILLFUNC;
+
+
+	if(sigaction(SIGINT,&SigAct,NULL)== -1)
+	perror("Sigaction Failed");
+	
+}
 int main()
 {
 	struct timeval t;
 	FILE *fptr;
 	char byte_send[4] = {0};
+	SigactionSetup();
 	
 	 struct sockaddr_in addr;
 	struct sockaddr_in Server_Address = {0};
@@ -83,6 +122,9 @@ fprintf(fptr, "-----------------------------------------------------------------
     }
 
     size_t MessageSize = sizeof(MessageSend);
+while(!killer)
+{
+sleep(1);
     int byte_send = send(soc_client,&MessageSize,sizeof(size_t), 0);
     printf("[INFO] Sent payload size\n");
 
@@ -102,7 +144,8 @@ fprintf(fptr, "-----------------------------------------------------------------
     
     read(soc_client, byte_send, 4);
     printf("Bytes %s\n",byte_send);
-
+}
+fprintf(fptr,"SIGINT RECEIVED\n");
     close(soc_client);
     return 0;
 }

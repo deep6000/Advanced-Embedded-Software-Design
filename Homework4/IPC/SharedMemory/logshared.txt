@@ -1,20 +1,267 @@
-Starting Process 1
-----------------------------------------------------------------------------------------
 				Process Info
 ----------------------------------------------------------------------------------------
-Time: 1551417550 Seconds 730289 Microseconds
-Process Name : Process 1 	Process PID 2367
+Time: 1764 Seconds 185407 Microseconds
+Process Name : Process 1 	Process PID 177
 IPC Method : Queues
 File Descriptor : 3
- ----------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------
 			 Process 1 :  Copying  to Shared memory
 ----------------------------------------------------------------------------------------
-Time: 1551417550 Seconds 730289 Microseconds
+Time: 1764 Seconds 187420 Microseconds
 ----------------------------------------------------------------------------------------
 			 Process 1 : Reading from Shared memory
 ----------------------------------------------------------------------------------------
-Time: 1551417550 Seconds 730289 Microseconds
+Time: 1764 Seconds 187482 Microseconds
 [INFO] Message From Process 2 through Shared Mem
-{Message: Hello from Process2 from PID 2367
-MessageLen: 33
+{Message: Hello from Process1 from PID 177
+MessageLen: 32
 USRLED: 1}
+----------------------------------------------------------------------------------------
+			 Process 1 :  Copying  to Shared memory
+----------------------------------------------------------------------------------------
+Time: 1765 Seconds 188050 Microseconds
+----------------------------------------------------------------------------------------
+			 Process 1 : Reading from Shared memory
+----------------------------------------------------------------------------------------
+Time: 1765 Seconds 188108 Microseconds
+[INFO] Message From Process 2 through Shared Mem
+{Message: Hello from Process1 from PID 177
+MessageLen: 32
+USRLED: 1}
+----------------------------------------------------------------------------------------
+			 Process 1 :  Copying  to Shared memory
+----------------------------------------------------------------------------------------
+Time: 1766 Seconds 188695 Microseconds
+----------------------------------------------------------------------------------------
+			 Process 1 : Reading from Shared memory
+----------------------------------------------------------------------------------------
+Time: 1766 Seconds 188795 Microseconds
+[INFO] Message From Process 2 through Shared Mem
+{Message: Hello from Process1 from PID 177
+MessageLen: 32
+USRLED: 1}
+
+----------------------------------------------------------------------------------------
+			 Process 1 :  Copying  to Shared memory
+----------------------------------------------------------------------------------------
+Time: 1768 Seconds 190832 Microseconds
+----------------------------------------------------------------------------------------
+			 Process 1 : Reading from Shared memory
+----------------------------------------------------------------------------------------
+Time: 1768 Seconds 190915 Microseconds
+[INFO] Message From Process 2 through Shared Mem
+{Message: Hello from Process1 from PID 177
+MessageLen: 32
+USRLED: 1}
+----------------------------------------------------------------------------------------
+			 Process 1 :  Copying  to Shared memory
+----------------------------------------------------------------------------------------
+Time: 1769 Seconds 191396 Microseconds
+----------------------------------------------------------------------------------------
+			 Process 1 : Reading from Shared memory
+----------------------------------------------------------------------------------------
+Time: 1769 Seconds 191463 Microseconds
+[INFO] Message From Process 2 through Shared Mem
+{Message: Hello from Process1 from PID 177
+MessageLen: 32
+USRLED: 1}
+----------------------------------------------------------------------------------------
+			 Process 1 :  Copying  to Shared memory
+----------------------------------------------------------------------------------------
+Time: 1770 Seconds 191926 Microseconds
+----------------------------------------------------------------------------------------
+			 Process 1 : Reading from Shared memory
+----------------------------------------------------------------------------------------
+Time: 1770 Seconds 192006 Microseconds
+[INFO] Message From Process 2 through Shared Mem
+{Message: Hello from Process1 from PID 177
+MessageLen: 32
+USRLED: 1}
+
+----------------------------------------------------------------------------------------
+			 Process 1 :  Copying  to Shared memory
+----------------------------------------------------------------------------------------
+Time: 1773 Seconds 193708 Microseconds
+----------------------------------------------------------------------------------------
+			 Process 1 : Reading from Shared memory
+----------------------------------------------------------------------------------------
+Time: 1773 Seconds 193790 Microseconds
+[INFO] Message From Process 2 through Shared Mem
+{Message: Hello from Process1 from PID 177
+MessageLen: 32
+USRLED: 1}
+----------------------------------------------------------------------------------------
+			 Process 1 :  Copying  to Shared memory
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+				Process Info
+----------------------------------------------------------------------------------------
+Time: 1765 Seconds 825539 Microseconds
+Process Name : Process 2 	Process PID 178
+IPC Method : Shared memory
+File Descriptor : 3
+ ----------------------------------------------------------------------------------------
+			 Process 2: Reading from Shared memory
+----------------------------------------------------------------------------------------
+Time: 1775 Seconds 195151 Microseconds
+[INFO] Message From Proc 1 through Shared Mem
+{Message: Hello from Process1 from PID 177
+MessageLen: 32
+USRLED: 1}
+----------------------------------------------------------------------------------------
+			 Process 2 : Copying to Shared memory
+----------------------------------------------------------------------------------------
+Time: 1775 Seconds 195472 Microseconds
+----------------------------------------------------------------------------------------
+			 Process 2: Reading from Shared memory
+----------------------------------------------------------------------------------------
+Time: 1776 Seconds 195704 Microseconds
+[INFO] Message From Proc 1 through Shared Mem
+{Message: Hello this is Process 2  PID 178
+MessageLen: 32
+USRLED: 1}
+----------------------------------------------------------------------------------------
+			 Process 2 : Copying to Shared memory
+----------------------------------------------------------------------------------------
+Time: 1776 Seconds 197150 Microseconds
+----------------------------------------------------------------------------------------
+			 Process 2: Reading from Shared memory
+----------------------------------------------------------------------------------------
+Time: 1777 Seconds 197382 Microseconds
+[INFO] Message From Proc 1 through Shared Mem
+{Message: Hello this is Process 2  PID 178
+MessageLen: 32
+USRLED: 1}
+
+----------------------------------------------------------------------------------------
+			 Process 2: Reading from Shared memory
+----------------------------------------------------------------------------------------
+Time: 1779 Seconds 200328 Microseconds
+[INFO] Message From Proc 1 through Shared Mem
+{Message: Hello this is Process 2  PID 178
+MessageLen: 32
+USRLED: 1}
+----------------------------------------------------------------------------------------
+			 Process 2 : Copying to Shared memory
+----------------------------------------------------------------------------------------
+Time: 1779 Seconds 200838 Microseconds
+----------------------------------------------------------------------------------------
+			 Process 2: Reading from Shared memory
+----------------------------------------------------------------------------------------
+Time: 1780 Seconds 201055 Microseconds
+[INFO] Message From Proc 1 through Shared Mem
+{Message: Hello this is Process 2  PID 178
+MessageLen: 32
+USRLED: 1}
+----------------------------------------------------------------------------------------
+			 Process 2 : Copying to Shared memory
+----------------------------------------------------------------------------------------
+Time: 1780 Seconds 201553 Microseconds
+----------------------------------------------------------------------------------------
+			 Process 2: Reading from Shared memory
+----------------------------------------------------------------------------------------
+Time: 1784 Seconds 801584 Microseconds
+[INFO] Message From Proc 1 through Shared Mem
+{Message: Hello this is Process 2  PID 178
+MessageLen: 32
+USRLED: 1}
+----------------------------------------------------------------------------------------
+			 Process 2 : Copying to Shared memory
+----------------------------------------------------------------------------------------
+Time: 1784 Seconds 801802 Microseconds
+SIGINT RECEIVED
+Time: 1774 Seconds 194332 Microseconds
+----------------------------------------------------------------------------------------
+			 Process 1 : Reading from Shared memory
+----------------------------------------------------------------------------------------
+Time: 1780 Seconds 208056 Microseconds
+[INFO] Message From Process 2 through Shared Mem
+{Message: Hello this is Process 2  PID 178
+MessageLen: 32
+USRLED: 1}
+----------------------------------------------------------------------------------------
+			 Process 1 :  Copying  to Shared memory
+----------------------------------------------------------------------------------------
+Time: 1781 Seconds 208578 Microseconds
+----------------------------------------------------------------------------------------
+			 Process 1 : Reading from Shared memory
+----------------------------------------------------------------------------------------
+Time: 1781 Seconds 208681 Microseconds
+[INFO] Message From Process 2 through Shared Mem
+{Message: Hello this is Process 2  PID 178
+MessageLen: 32
+USRLED: 1}
+----------------------------------------------------------------------------------------
+			 Process 1 :  Copying  to Shared memory
+----------------------------------------------------------------------------------------
+Time: 1782 Seconds 209138 Microseconds
+----------------------------------------------------------------------------------------
+			 Process 1 : Reading from Shared memory
+----------------------------------------------------------------------------------------
+Time: 1782 Seconds 209203 Microseconds
+[INFO] Message From Process 2 through Shared Mem
+{Message: Hello this is Process 2  PID 178
+MessageLen: 32
+USRLED: 1}
+----------------------------------------------------------------------------------------
+			 Process 1 :  Copying  to Shared memory
+----------------------------------------------------------------------------------------
+Time: 1783 Seconds 209631 Microseconds
+----------------------------------------------------------------------------------------
+			 Process 1 : Reading from Shared memory
+----------------------------------------------------------------------------------------
+Time: 1783 Seconds 209709 Microseconds
+[INFO] Message From Process 2 through Shared Mem
+{Message: Hello this is Process 2  PID 178
+MessageLen: 32
+USRLED: 1}
+----------------------------------------------------------------------------------------
+			 Process 1 :  Copying  to Shared memory
+----------------------------------------------------------------------------------------
+Time: 1784 Seconds 210165 Microseconds
+----------------------------------------------------------------------------------------
+			 Process 1 : Reading from Shared memory
+----------------------------------------------------------------------------------------
+Time: 1784 Seconds 210225 Microseconds
+[INFO] Message From Process 2 through Shared Mem
+{Message: Hello this is Process 2  PID 178
+MessageLen: 32
+USRLED: 1}
+----------------------------------------------------------------------------------------
+			 Process 1 :  Copying  to Shared memory
+----------------------------------------------------------------------------------------
+Time: 1785 Seconds 210741 Microseconds
+----------------------------------------------------------------------------------------
+			 Process 1 : Reading from Shared memory
+----------------------------------------------------------------------------------------
+Time: 1785 Seconds 210804 Microseconds
+[INFO] Message From Process 2 through Shared Mem
+{Message: Hello this is Process 2  PID 178
+MessageLen: 32
+USRLED: 1}
+----------------------------------------------------------------------------------------
+			 Process 1 :  Copying  to Shared memory
+----------------------------------------------------------------------------------------
+Time: 1786 Seconds 211294 Microseconds
+----------------------------------------------------------------------------------------
+			 Process 1 : Reading from Shared memory
+----------------------------------------------------------------------------------------
+Time: 1786 Seconds 211350 Microseconds
+[INFO] Message From Process 2 through Shared Mem
+{Message: Hello this is Process 2  PID 178
+MessageLen: 32
+USRLED: 1}
+----------------------------------------------------------------------------------------
+			 Process 1 :  Copying  to Shared memory
+----------------------------------------------------------------------------------------
+Time: 1786 Seconds 694109 Microseconds
+----------------------------------------------------------------------------------------
+			 Process 1 : Reading from Shared memory
+----------------------------------------------------------------------------------------
+Time: 1786 Seconds 694150 Microseconds
+[INFO] Message From Process 2 through Shared Mem
+{Message: Hello this is Process 2  PID 178
+MessageLen: 32
+USRLED: 1}
+SIGINT RECEIVED
