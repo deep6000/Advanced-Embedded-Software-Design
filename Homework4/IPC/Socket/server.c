@@ -1,4 +1,4 @@
-\#include <sys/socket.h>
+#include <sys/socket.h>
 
 #include <netinet/in.h>
 #include <arpa/inet.h>
@@ -60,14 +60,19 @@ int main()
 	SigactionSetup();
 	struct timeval t;
 	FILE *fptr;
-	fptr = fopen(FileName, "a");
+	
+	
 	Message MessageReceive = {0};
+	Message MessageSent = {0};
 	int soc_server;
-	int soc_accept, Byte_read;
+	int accepted_socket, Byte_read;
 	char Buffer2[1024] = {0};
 	char PeerIP_Addr[30] = {0};
 	int MessageLen = 0;
 	int count=0;
+	int PID ;
+	PID=  (int)getpid();
+
 
 
 	if(fptr== NULL)
@@ -75,14 +80,15 @@ int main()
 	perror("Opening File\n");
 	}
 	gettimeofday(&t,NULL);
+	fptr = fopen(FileName, "a");
 	fprintf(fptr, "----------------------------------------------------------------------------------------\n");
 	fprintf(fptr, "\t\t\t\tProcess Info\n");	
 	fprintf(fptr, "----------------------------------------------------------------------------------------\n");
 	fprintf(fptr,"Time: %lu Seconds %lu Microseconds\n",t.tv_sec,t.tv_usec );
-	fprintf(fptr,"Process Name : Process 1 \tProcess PID %d\n", getpid());
-	fprintf(fptr, "IPC Method : Queues\n");
+	fprintf(fptr,"Process Name : Server \tProcess PID %d\n", PID);
+	fprintf(fptr, "IPC Method : Socket\n");
 	fprintf(fptr, "File Descriptor : %d\n ",fileno(fptr));
-	
+	fclose(fptr);
 	
 	
 
@@ -93,11 +99,13 @@ int main()
 	if((soc_server = socket(AF_INET,SOCK_STREAM,0)) == 0)
 	{
 	gettimeofday(&t,NULL);
+	fptr = fopen(FileName, "a");
+	
 	fprintf(fptr, "----------------------------------------------------------------------------------------\n");	
 	fprintf(fptr, "\t\t\t Socket Created\n" );
 	fprintf(fptr, "----------------------------------------------------------------------------------------\n");
 	fprintf(fptr,"Time: %lu Seconds %lu Microseconds\n",t.tv_sec,t.tv_usec );
-
+	fclose(fptr);
 	
 		printf("[ERROR] Socket Creation\n");
 		return 1;
@@ -125,41 +133,32 @@ int main()
 		return 1;
 	}
 
-	fprintf(fptr, "----------------------------------------------------------------------------------------\n");	
-		fprintf(fptr, "\t\t\t Socket Binded\n" );
-		fprintf(fptr, "----------------------------------------------------------------------------------------\n");
-
-fprintf(fptr,"Time: %lu Seconds %lu Microseconds\n",t.tv_sec,t.tv_usec );
+	
 	
 	printf("[INFO] Socket binded\n");
+
 
 	if(listen(soc_server,5) < 0)
 	{
 		printf("[ERROR] Cannot listen\n");
 		return 1;
 	}
-
+	printf("Socket Listening\n");
 	int Addr_length = sizeof(Peer_address);
 	
-		accepted_socket = accept(soc_server, (struct sockaddr*)&Peer_address,(socklen_t*)&Addr_length);
-		gettimeofday(&t,NULL);
+	accepted_socket = accept(soc_server, (struct sockaddr*)&Peer_address,(socklen_t*)&Addr_length);
+	gettimeofday(&t,NULL);
 		
 		
 	
-
-fprintf(fptr,"Peer Address: %s\n",inet_ntop(AF_INET, &Peer_address.sin_addr, PeerIP_Addr, sizeof(PeerIP_Addr)));
-fprintf(fptr,"Time: %lu Seconds %lu Microseconds\n",t.tv_sec,t.tv_usec );
-		printf("[INFO] Peer Addr: %s\n",inet_ntop(AF_INET, &Peer_address.sin_addr, PeerIP_Addr, sizeof(PeerIP_Addr)));
-
-		while (!killer)
-		{
+	while (!killer)
+	{
 		sleep(1);
 		Byte_read = read(accepted_socket, &MessageLen, sizeof(int));
 
 		if(Byte_read == sizeof(int))
 		{
-		fprintf(fptr , "Size: %d\n",MessageLen);			
-			printf("[Size: %d\n",MessageLen);
+					
 		}	
 		else
 		{
@@ -169,22 +168,49 @@ fprintf(fptr,"Time: %lu Seconds %lu Microseconds\n",t.tv_sec,t.tv_usec );
 		
 		while((Byte_read = read(accepted_socket, Buffer2+count, 1024)) < MessageLen)
 		{
-	fprintf(fptr, " Bytes received: %d\n",Byte_read);
 			
 			count= count + Byte_read;	
 		}
 		gettimeofday(&t,NULL);
 		Message *msgptr= (Message*)Buffer2;
-		fprintf(fptr,"Message Received \nMessage: %s\Length: %d\nUSRLED: %d\n",msgptr->Buffer,msgptr->BufLen,msgptr->USRLED);
-		printf("[INFO] Message Recvd\nMessage: %s\nMessageLen: %d\nUSRLED: %d\n",msgptr->Buffer,msgptr->BufLen,msgptr->USRLED);
-fprintf(fptr,"Time: %lu Seconds %lu Microseconds\n",t.tv_sec,t.tv_usec );
-
+		fptr = fopen(FileName, "a");
+		printf("Message Received\n");
+		fprintf(fptr, "----------------------------------------------------------------------------------------\n");
+		fprintf(fptr, "\t\t\t\tServer Received Message\n");	
+		fprintf(fptr, "----------------------------------------------------------------------------------------\n");
+		fprintf(fptr,"Message: %s\nLength: %d\nUSRLED: %d\n",msgptr->Buffer,msgptr->BufLen,msgptr->USRLED);
+		fprintf(fptr,"Time: %lu Seconds %lu Microseconds\n",t.tv_sec,t.tv_usec );
+		fclose(fptr);
 	
+   		sprintf(MessageSent.Buffer,"From Server PID :%d", PID);
+   		MessageSent.BufLen = strlen(MessageSent.Buffer);
+    	MessageSent.USRLED = 1;
 
-		send(accepted_socket , "ACK" , 4, 0);
-		}
-		fprintf(fptr,"SIGINT RECEIVED");
-		close(accepted_socket);
+		size_t MessageSize = sizeof(MessageSent);
+
+ 		 int byte_send = send(accepted_socket,&MessageSize,sizeof(int), 0);
+   
+
+    	byte_send= send(accepted_socket , (char*)&MessageSent , sizeof(MessageSent), 0 );
+
+   		 if(byte_send < sizeof(MessageSent))
+    	{
+        printf("Overflow\n");
+        return 1;
+    	}
+    	gettimeofday(&t,NULL);
+		fptr = fopen(FileName, "a");
+		fprintf(fptr, "----------------------------------------------------------------------------------------\n");
+		fprintf(fptr, "\t\t\t\tServer Sent Message\n");	
+		fprintf(fptr, "----------------------------------------------------------------------------------------\n");
+		fprintf(fptr,"Time: %lu Seconds %lu Microseconds\n",t.tv_sec,t.tv_usec );
+		fclose(fptr);
+		printf("Message Sent\n");
+   }
+	fptr = fopen(FileName, "a");
+	fprintf(fptr,"SIGINT RECEIVED");
+	fclose(fptr);
+	close(accepted_socket);
 
 	return 0;
 }

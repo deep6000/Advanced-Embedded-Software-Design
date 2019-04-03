@@ -30,8 +30,8 @@
 
 typedef struct{
 
-    char Buffer[20];
-    size_t BufLen;
+    char Buffer[30];
+   int BufLen;
     uint8_t USRLED:1;
 }Message;
 
@@ -39,13 +39,11 @@ int killer = 0;
 
 void KILLFUNC(int signum)
 {
-killer =1 ;
+    killer =1 ;
 }
 
 int SigactionSetup()
 {
-
- 	
 	struct sigaction SigAct;
 
 	memset(&SigAct, 0, sizeof(SigAct));
@@ -56,38 +54,42 @@ int SigactionSetup()
 	perror("Sigaction Failed");
 	
 }
+
 int main()
 {
 	struct timeval t;
 	FILE *fptr;
-	char byte_send[4] = {0};
+
 	SigactionSetup();
 	
-	 struct sockaddr_in addr;
+	struct sockaddr_in addr;
 	struct sockaddr_in Server_Address = {0};
     
 	int soc_client;
     char *msgptr;
     Message MessageSend;
+    char Buffer2[1024] = {0};
+    int PID ;
+    PID = (int)getpid();
 	
-	fptr = fopen(FileName, "a");
+	fptr = fopen(FileName, "w");
 	if(fptr== NULL)
 	{
-	perror("Opening File\n");
+    	perror("Opening File\n");
 	}
-fprintf(fptr, "----------------------------------------------------------------------------------------\n");
+    fprintf(fptr, "----------------------------------------------------------------------------------------\n");
 	fprintf(fptr, "\t\t\t\tProcess Info\n");	
 	fprintf(fptr, "----------------------------------------------------------------------------------------\n");
 	fprintf(fptr,"Time: %lu Seconds %lu Microseconds\n",t.tv_sec,t.tv_usec );
-		//printf("Process PID %d\n", getpid());
-	fprintf(fptr,"Process Name : Process 1 \tProcess PID %d\n", getpid());
-	fprintf(fptr, "IPC Method : Queues\n");
+	
+	fprintf(fptr,"Process Name :Client \tProcess PID %d\n",PID);
+	fprintf(fptr, "IPC Method : Sockets\n");
 	fprintf(fptr, "File Descriptor : %d\n ",fileno(fptr));
-
-   
+    fclose(fptr);
+    
     msgptr = (char*)&MessageSend;
 
-    sprintf(MessageSend.Buffer,"From Client PID :%d", getpid());
+    sprintf(MessageSend.Buffer,"From Client PID :%d",PID);
     MessageSend.BufLen = strlen(MessageSend.Buffer);
     MessageSend.USRLED = 1;
 
@@ -96,12 +98,12 @@ fprintf(fptr, "-----------------------------------------------------------------
         printf("[ERROR] Socket creation\n");
         return -1;
     }
-gettimeofday(&t,NULL);
-fprintf(fptr, "----------------------------------------------------------------------------------------\n");
+    gettimeofday(&t,NULL);
+    fprintf(fptr, "----------------------------------------------------------------------------------------\n");
 	fprintf(fptr, "\t\t\t\tSocket Created\n");	
 	fprintf(fptr, "----------------------------------------------------------------------------------------\n");
 	
-  fprintf(fptr,"Time: %lu Seconds %lu Microseconds\n",t.tv_sec,t.tv_usec );
+    fprintf(fptr,"Time: %lu Seconds %lu Microseconds\n",t.tv_sec,t.tv_usec );
     printf("[INFO] Socket Created\n");
   
     Server_Address.sin_family = AF_INET;
@@ -122,30 +124,65 @@ fprintf(fptr, "-----------------------------------------------------------------
     }
 
     size_t MessageSize = sizeof(MessageSend);
-while(!killer)
-{
-sleep(1);
-    int byte_send = send(soc_client,&MessageSize,sizeof(size_t), 0);
-    printf("[INFO] Sent payload size\n");
-
-    byte_send = send(soc_client , (char*)&MessageSend , sizeof(MessageSend), 0 );
-
-    if(byte_send < sizeof(MessageSend))
+    while(!killer)
     {
-        printf("Overflow\n");
-        return 1;
+        sleep(1);
+        int byte_send = send(soc_client,&MessageSize,sizeof(int), 0);
+         gettimeofday(&t,NULL);
+        fptr = fopen(FileName, "a");
+        fprintf(fptr, "----------------------------------------------------------------------------------------\n");
+        fprintf(fptr, "\t\t\t\tCLient Sent Message\n");	
+        fprintf(fptr, "----------------------------------------------------------------------------------------\n");
+         fprintf(fptr,"Time: %lu Seconds %lu Microseconds\n",t.tv_sec,t.tv_usec );
+        printf("Message Sent\n");
+        byte_send= send(soc_client , (char*)&MessageSend , sizeof(MessageSend), 0 );
+        fclose(fptr);
+        if(byte_send < sizeof(MessageSend))
+        {
+            printf("Overflow\n");
+            return 1;
+        }
+        gettimeofday(&t,NULL);
+        fprintf(fptr,"Time: %lu Seconds %lu Microseconds\n",t.tv_sec,t.tv_usec );
+        
+        gettimeofday(&t,NULL);
+        
+        int MessageLen;
+        
+        int Byte_read = read(soc_client, &MessageLen, sizeof(int));
+
+        if(Byte_read == sizeof(int))
+        {
+           // fprintf(fptr , "Size: %d\n",MessageLen);			
+            //printf("[Size: %d\n",MessageLen);
+        }	
+        else
+        {
+            printf("[ERROR] Invalid data\n");
+            return -1;
+        }
+        int count = 0;
+        while((Byte_read = read(soc_client, Buffer2+count, 1024)) < MessageLen)
+        {
+                
+                count= count + Byte_read;	
+        }
+        gettimeofday(&t,NULL);
+        printf("Message Received\n");
+        Message *msgptr= (Message*)Buffer2;
+        fptr = fopen(FileName, "a");
+
+        fprintf(fptr, "----------------------------------------------------------------------------------------\n");
+        fprintf(fptr, "\t\t\t\tCLient Received Message\n");	
+        fprintf(fptr, "----------------------------------------------------------------------------------------\n");
+        fprintf(fptr,"Message Received  from Client :\nMessage: %s\nLength: %d\nUSRLED: %d\n",msgptr->Buffer,msgptr->BufLen,msgptr->USRLED);
+        //printf("[INFO] Message Recvd\nMessage: %s\nMessageLen: %d\nUSRLED: %d\n",msgptr->Buffer,msgptr->BufLen,msgptr->USRLED);
+        fprintf(fptr,"Time: %lu Seconds %lu Microseconds\n",t.tv_sec,t.tv_usec );
+        fclose(fptr);
     }
-	
-	gettimeofday(&t,NULL);
-    fprintf(" Bytes send: %d\n",byte_send);
-    fprintf("Message sent\nMessage: %s\nLength: %d\nUSRLED %d\n",MessageSend.Buffer,MessageSend.BufLen,MessageSend.USRLED);
-	fprintf(fptr,"Time: %lu Seconds %lu Microseconds\n",t.tv_sec,t.tv_usec );
-    
-    
-    read(soc_client, byte_send, 4);
-    printf("Bytes %s\n",byte_send);
-}
-fprintf(fptr,"SIGINT RECEIVED\n");
+    fptr = fopen(FileName, "a");
+    fprintf(fptr,"SIGINT RECEIVED\n");
+    fclose(fptr);
     close(soc_client);
     return 0;
 }
